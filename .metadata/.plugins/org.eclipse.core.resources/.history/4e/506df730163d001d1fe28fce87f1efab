@@ -1,0 +1,17 @@
+/*
+ * port.h
+ *
+ *  Created on: Sep 25, 2022
+ *      Author: Santiago
+ */
+
+#ifndef DEV_INC_PORT_H_
+#define DEV_INC_PORT_H_
+
+HAL_StatusTypeDef DEV_InitI2C(void);
+HAL_StatusTypeDef DEV_DeInitI2C(void);
+HAL_StatusTypeDef DEV_WriteI2C(uint16_t addr, uint8_t * pdata, uint16_t size);
+HAL_StatusTypeDef DEV_ReadI2C(uint16_t addr, uint8_t * pdata, uint16_t size);
+
+
+#endif /* DEV_INC_PORT_H_ */

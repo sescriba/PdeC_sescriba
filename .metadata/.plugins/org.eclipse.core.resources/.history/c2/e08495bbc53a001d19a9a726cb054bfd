@@ -1,0 +1,15 @@
+/*
+ * mpu9250.h
+ *
+ *  Created on: 22 sep. 2022
+ *      Author: Santiago
+ */
+
+#ifndef MPU9250_INC_MPU9250_H_
+#define MPU9250_INC_MPU9250_H_
+
+
+
+
+
+#endif /* MPU9250_INC_MPU9250_H_ */

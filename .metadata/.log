@@ -131,3 +131,84 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-09-20 18:29:25.228 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-20 18:29:42.087
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-20 18:29:42.210
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-20 18:29:57.163
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-09-20 18:32:17.220
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-09-20 18:32:17.222
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader
+!SESSION 2022-09-22 19:01:30.454 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-22 19:01:36.084
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-22 19:01:36.228
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-22 19:01:47.882
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-24 11:44:21.331 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-24 11:44:40.357
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-24 11:44:40.535
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-09-24 11:44:55.860
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$40
+!SESSION 2022-09-24 18:23:58.479 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-24 18:24:06.632
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-24 18:24:06.802
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-24 18:24:20.686
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-25 16:55:00.405 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-25 16:55:06.128
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-25 16:55:06.261
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-25 16:55:19.842
+!MESSAGE Started RMI Server, listening on port 41337
