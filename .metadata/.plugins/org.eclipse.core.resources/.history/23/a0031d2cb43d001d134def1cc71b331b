@@ -1,0 +1,17 @@
+/*
+ * app_sm.c
+ *
+ *  Created on: 26 sep. 2022
+ *      Author: Santiago
+ */
+
+#include 'app_sm.h'
+
+State_t states;
+
+retType SM_Init(void){
+
+	retType ret = API_OK;
+
+	states = SM_INIT;
+}

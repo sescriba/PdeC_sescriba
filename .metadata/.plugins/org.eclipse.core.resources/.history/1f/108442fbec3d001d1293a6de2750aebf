@@ -1,0 +1,39 @@
+/*
+ * app_sm.c
+ *
+ *  Created on: 26 sep. 2022
+ *      Author: Santiago
+ */
+
+#include "app_sm.h"
+#include "types.h"
+
+State_t states;
+
+retType SM_Init(void){
+
+	retType ret = API_OK;
+
+	states = SM_INIT;
+	return ret;
+}
+
+retType SM_Proccess(void){
+
+	retType ret = API_OK;
+
+	switch(states){
+	case SM_INIT:
+		break;
+	case SM_READY2READ:
+		break;
+	case SM_CONVERT:
+		break;
+	case SM_PRINT:
+		break;
+	default:
+		break;
+	}
+	return ret;
+
+}

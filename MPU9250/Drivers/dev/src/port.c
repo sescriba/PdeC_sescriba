@@ -6,18 +6,13 @@
  */
 
 
-#include "stm32f4xx_hal_i2c.h"
-#include "types.h"
+#include "port.h"
 
 #define I2C_CLOCKSPEED 400000
 #define I2C_OWNADDRESS1 0
 #define I2C_TIMEOUT 0xFFFF
 
 I2C_HandleTypeDef  hi2c;
-
-void HAL_I2C_MspInit(I2C_HandleTypeDef * hi2c){
-
-}
 
 retType DEV_InitI2C(void){
 
@@ -46,21 +41,21 @@ retType DEV_DeInitI2C(void){
 
 }
 
-retType DEV_WriteI2C(uint16_t addr, uint8_t * pdata, uint16_t size){
+retType DEV_WriteI2C(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 
-	ret |= HAL_I2C_Master_Transmit(&hi2c, addr, pData, size, I2C_TIMEOUT);
+	ret |= HAL_I2C_Master_Transmit(&hi2c, slave_addr, pdata, size, I2C_TIMEOUT);
 	return ret;
 
 
 }
 
-retType DEV_ReadI2C(uint16_t addr, uint8_t * pdata, uint16_t size){
+retType DEV_ReadI2C(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 
-	ret |= HAL_I2C_Master_Receive(&hi2c, addr, pData, size, I2C_TIMEOUT);
+	ret |= HAL_I2C_Master_Receive(&hi2c, slave_addr, pdata, size, I2C_TIMEOUT);
 	return ret;
 
 }

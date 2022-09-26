@@ -1,0 +1,23 @@
+/*
+ * mpu9250.h
+ *
+ *  Created on: 22 sep. 2022
+ *      Author: Santiago
+ */
+
+#ifndef DEV_INC_MPU9250_H_
+#define DEV_INC_MPU9250_H_
+
+#include "types.h"
+
+
+retType APP_MPU9250Write(uint8_t * addr2write, uint8_t * pdata, uint16_t size);
+retType APP_MPU9250Read(uint8_t * addr2read, uint8_t * pdata, uint16_t size);
+retType APP_MPU9250Init(void);
+retType APP_MPU9250ReadGyro(void);
+retType APP_MPU9250ReadAccl(void);
+retType APP_MPU9250ReadTemp(void);
+
+
+
+#endif /* DEV_INC_MPU9250_H_ */

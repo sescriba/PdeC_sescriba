@@ -1,0 +1,6 @@
+../Drivers/dev/src/mpu9250.c:20:9:APP_MPU9250Write	32	static
+../Drivers/dev/src/mpu9250.c:33:9:APP_MPU9250Read	32	static
+../Drivers/dev/src/mpu9250.c:47:9:APP_MPU9250Init	16	static
+../Drivers/dev/src/mpu9250.c:63:9:APP_MPU9250ReadGyro	24	static
+../Drivers/dev/src/mpu9250.c:70:9:APP_MPU9250ReadAccl	24	static
+../Drivers/dev/src/mpu9250.c:76:9:APP_MPU9250ReadTemp	24	static

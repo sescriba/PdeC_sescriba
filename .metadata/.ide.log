@@ -2109,3 +2109,17 @@
 2022-09-25 18:00:10,378 [INFO] ApiDbMcu:505 - Load IP Config File for PDM2PCM
 2022-09-25 18:00:10,694 [INFO] OpenFileManager:327 - Restore cursor
 2022-09-25 18:27:49,961 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-09-26 11:18:56,797 [INFO] Activator:177 - 
+
+
+2022-09-26 11:18:56,802 [INFO] Activator:178 - !SESSION log4j initialized
+2022-09-26 11:19:33,138 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-09-26 11:19:33,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-09-26 11:19:33,141 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-09-26 19:30:19,486 [INFO] Activator:177 - 
+
+
+2022-09-26 19:30:19,503 [INFO] Activator:178 - !SESSION log4j initialized
+2022-09-26 19:30:54,837 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-09-26 19:30:54,837 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-09-26 19:30:54,837 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
