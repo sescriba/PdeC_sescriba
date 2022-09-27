@@ -11,7 +11,9 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/dev/src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
+-include Drivers/BSP/STM32F4xx_Nucleo_144/subdir.mk
 -include Core/Startup/subdir.mk
+-include Core/Src/app/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
 

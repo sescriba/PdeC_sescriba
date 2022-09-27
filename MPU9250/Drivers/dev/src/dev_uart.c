@@ -89,6 +89,6 @@ retType DEV_UARTInit(void){
 
 	ret |= HAL_UART_Init(&huart);
 	if(ret != API_OK) return ret;
-	else uartSendString(str);
+	else DEV_UARTSendStringSize(str, sizeof(str));
 	return ret;
 }

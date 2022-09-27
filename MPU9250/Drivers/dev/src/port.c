@@ -14,7 +14,7 @@
 
 I2C_HandleTypeDef  hi2c;
 
-retType DEV_InitI2C(void){
+retType DEV_I2CInit(void){
 
 	retType ret = API_OK;
 	hi2c.Instance = I2C1;
@@ -28,11 +28,11 @@ retType DEV_InitI2C(void){
 
 
 	ret |= HAL_I2C_Init(&hi2c);
-	if(ret != API_OK) return ret;
+	return ret;
 
 }
 
-retType DEV_DeInitI2C(void){
+retType DEV_I2CDeInit(void){
 
 	retType ret = API_OK;
 
@@ -41,7 +41,7 @@ retType DEV_DeInitI2C(void){
 
 }
 
-retType DEV_WriteI2C(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
+retType DEV_I2CWrite(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 
@@ -51,7 +51,7 @@ retType DEV_WriteI2C(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 }
 
-retType DEV_ReadI2C(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
+retType DEV_I2CRead(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 

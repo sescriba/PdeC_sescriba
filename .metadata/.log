@@ -257,3 +257,183 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\Documents\CES
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-26 20:07:59.418
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-27 09:09:20.667 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-27 09:09:26.296
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-27 09:09:26.437
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-27 09:09:39.640
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-27 10:15:13.084 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-27 10:15:26.404
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-27 10:15:26.487
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-27 10:15:40.204
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-27 12:08:18.945 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-27 12:08:25.082
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-27 12:08:25.207
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-27 12:08:39.939
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.805
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.805
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.811
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.811
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.813
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.814
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.815
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:53.816
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.286
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.288
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.289
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.289
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.291
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.291
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.292
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:31:58.293
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.734
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.735
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.736
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.737
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.738
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.738
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.739
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:36.740
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.649
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.650
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.651
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.651
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.652
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.653
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.654
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 12:32:41.654
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+!SESSION 2022-09-27 16:32:47.012 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-27 16:33:01.755
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-27 16:33:01.927
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-27 16:33:12.496
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:29.995
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:29.997
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:30.000
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:30.001
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Debug/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:30.002
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:30.002
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:30.004
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/inc}"
+
+!ENTRY com.st.stm32cube.ide.mcu.build 4 4 2022-09-27 16:43:30.004
+!MESSAGE Failed to check relative, returning possibly relative path: D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\Release/"" literal was "${workspace_loc:/${ProjName}/src}"

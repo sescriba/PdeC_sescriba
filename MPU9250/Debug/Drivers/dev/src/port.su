@@ -1,4 +1,4 @@
-../Drivers/dev/src/port.c:17:9:DEV_InitI2C	16	static
-../Drivers/dev/src/port.c:35:9:DEV_DeInitI2C	16	static
-../Drivers/dev/src/port.c:44:9:DEV_WriteI2C	32	static
-../Drivers/dev/src/port.c:54:9:DEV_ReadI2C	32	static
+../Drivers/dev/src/port.c:17:9:DEV_I2CInit	16	static
+../Drivers/dev/src/port.c:35:9:DEV_I2CDeInit	16	static
+../Drivers/dev/src/port.c:44:9:DEV_I2CWrite	32	static
+../Drivers/dev/src/port.c:54:9:DEV_I2CRead	32	static

@@ -1,6 +1,9 @@
-../Drivers/dev/src/mpu9250.c:20:9:APP_MPU9250Write	32	static
-../Drivers/dev/src/mpu9250.c:33:9:APP_MPU9250Read	32	static
-../Drivers/dev/src/mpu9250.c:47:9:APP_MPU9250Init	16	static
-../Drivers/dev/src/mpu9250.c:63:9:APP_MPU9250ReadGyro	24	static
-../Drivers/dev/src/mpu9250.c:70:9:APP_MPU9250ReadAccl	24	static
-../Drivers/dev/src/mpu9250.c:76:9:APP_MPU9250ReadTemp	24	static
+../Drivers/dev/src/mpu9250.c:37:9:APP_MPU9250Write	24	static
+../Drivers/dev/src/mpu9250.c:50:9:APP_MPU9250Read	24	static
+../Drivers/dev/src/mpu9250.c:64:9:APP_MPU9250Init	16	static
+../Drivers/dev/src/mpu9250.c:80:9:APP_MPU9250ReadGyro	32	static
+../Drivers/dev/src/mpu9250.c:97:9:APP_MPU9250ReadAccl	32	static
+../Drivers/dev/src/mpu9250.c:114:9:APP_MPU9250ReadTemp	24	static
+../Drivers/dev/src/mpu9250.c:125:16:gyro_convert	24	static
+../Drivers/dev/src/mpu9250.c:133:16:accl_convert	24	static
+../Drivers/dev/src/mpu9250.c:141:16:temp_convert	24	static
