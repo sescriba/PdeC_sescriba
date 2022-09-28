@@ -9,7 +9,7 @@
 #include "mpu9250.h"
 #include "port.h"
 
-#define MPU9250_SLAVEADDR 0x68
+#define MPU9250_SLAVEADDR 0xD0
 #define MPU9250_PWR_MGMT_1 0x6B
 #define MPU9250_CONFIG_AD 0x1A
 #define MPU9250_GYRO_CONFIG 0x1B
@@ -64,8 +64,12 @@ retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
 retType APP_MPU9250Init(void){
 
 	retType ret = API_OK;
-//	uint8_t *data;
 
+	ret |= DEV_I2CIsReady(MPU9250_SLAVEADDR);
+	if(ret != API_OK) return ret;
+
+	ret |= APP_MPU9250Write(MPU9250_PWR_MGMT_1, (uint8_t*)0x0, 1);
+	if(ret != API_OK) return ret;
 	ret |= APP_MPU9250Write(MPU9250_PWR_MGMT_1, (uint8_t*)0x1, 1);
 	if(ret != API_OK) return ret;
 	ret |= APP_MPU9250Write(MPU9250_GYRO_CONFIG, (uint8_t*)0x8, 1);
@@ -88,9 +92,9 @@ retType APP_MPU9250ReadGyro(axis_t * gyro){
 	ret |= APP_MPU9250Read(MPU9250_GYRO_YOUT_H, &aux_y, 2);
 	ret |= APP_MPU9250Read(MPU9250_GYRO_ZOUT_H, &aux_z, 2);
 
-	*gyro->x = gyro_convert(aux_x);
-	*gyro->y = gyro_convert(aux_y);
-	*gyro->z = gyro_convert(aux_z);
+//	*gyro->x = gyro_convert(aux_x);
+//	*gyro->y = gyro_convert(aux_y);
+//	*gyro->z = gyro_convert(aux_z);
 	return ret;
 }
 
@@ -105,9 +109,9 @@ retType APP_MPU9250ReadAccl(axis_t * accl){
 	ret |= APP_MPU9250Read(MPU9250_ACCEL_YOUT_H, &aux_y, 2);
 	ret |= APP_MPU9250Read(MPU9250_ACCEL_ZOUT_H, &aux_z, 2);
 
-	*accl->x = accl_convert(aux_x);
-	*accl->y = accl_convert(aux_y);
-	*accl->z = accl_convert(aux_z);
+//	*accl->x = accl_convert(aux_x);
+//	*accl->y = accl_convert(aux_y);
+//	*accl->z = accl_convert(aux_z);
 	return ret;
 }
 
@@ -118,7 +122,7 @@ retType APP_MPU9250ReadTemp(uint8_t * temp){
 
 	ret |= APP_MPU9250Read(MPU9250_TEMP_OUT_H, &aux_temp, 2);
 
-	*temp = temp_convert(aux_temp);
+//	*temp = temp_convert(aux_temp);
 	return ret;
 }
 

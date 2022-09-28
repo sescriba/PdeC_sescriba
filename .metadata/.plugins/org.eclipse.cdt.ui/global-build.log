@@ -1,6 +1,26 @@
-17:27:41 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:43:10 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20580	     20	   1732	  22332	   573c	MPU9250.elf
+Finished building: default.size.stdout
+ 
+19:43:14 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20580	     20	   1732	  22332	   573c	MPU9250.elf
+Finished building: default.size.stdout
+ 
+19:44:00 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20580	     20	   1732	  22332	   573c	MPU9250.elf
+Finished building: default.size.stdout
+ 
+19:45:13 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
 arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MPU9250.elf
@@ -8,15 +28,67 @@ Finished building target: MPU9250.elf
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  20080	     20	   1732	  21832	   5548	MPU9250.elf
+  20592	     20	   1732	  22344	   5748	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-17:27:47 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:45:30 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-size   MPU9250.elf 
    text	   data	    bss	    dec	    hex	filename
-  20080	     20	   1732	  21832	   5548	MPU9250.elf
+  20592	     20	   1732	  22344	   5748	MPU9250.elf
 Finished building: default.size.stdout
+ 
+19:47:19 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+../Core/Src/app/app_sm.c: In function 'APP_SMProccess':
+../Core/Src/app/app_sm.c:51:12: warning: assignment to 'uint8_t' {aka 'unsigned char'} from 'uint8_t *' {aka 'unsigned char *'} makes integer from pointer without a cast [-Wint-conversion]
+   51 |     str[0] = read_buff->gyro->x;
+      |            ^
+../Core/Src/app/app_sm.c:64:12: warning: assignment to 'uint8_t' {aka 'unsigned char'} from 'uint8_t *' {aka 'unsigned char *'} makes integer from pointer without a cast [-Wint-conversion]
+   64 |     str[1] = read_buff->accl->x;
+      |            ^
+../Core/Src/app/app_sm.c:77:12: warning: assignment to 'uint8_t' {aka 'unsigned char'} from 'uint8_t *' {aka 'unsigned char *'} makes integer from pointer without a cast [-Wint-conversion]
+   77 |     str[3] = read_buff->temp;
+      |            ^
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  20592	     20	   1732	  22344	   5748	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:49:36 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  20568	     20	   1732	  22320	   5730	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:50:26 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  20568	     20	   1732	  22320	   5730	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
  

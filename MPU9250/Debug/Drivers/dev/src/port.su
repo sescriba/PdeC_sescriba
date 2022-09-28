@@ -2,3 +2,4 @@
 ../Drivers/dev/src/port.c:35:9:DEV_I2CDeInit	16	static
 ../Drivers/dev/src/port.c:44:9:DEV_I2CWrite	32	static
 ../Drivers/dev/src/port.c:54:9:DEV_I2CRead	32	static
+../Drivers/dev/src/port.c:63:9:DEV_I2CIsReady	24	static

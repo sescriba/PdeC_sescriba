@@ -8,7 +8,7 @@
 
 #include "port.h"
 
-#define I2C_CLOCKSPEED 400000
+#define I2C_CLOCKSPEED 100000
 #define I2C_OWNADDRESS1 0
 #define I2C_TIMEOUT 0xFFFF
 
@@ -17,7 +17,7 @@ I2C_HandleTypeDef  hi2c;
 retType DEV_I2CInit(void){
 
 	retType ret = API_OK;
-	hi2c.Instance = I2C1;
+	hi2c.Instance = I2C2;
 	hi2c.Init.ClockSpeed = I2C_CLOCKSPEED;
 	hi2c.Init.DutyCycle = I2C_DUTYCYCLE_2;
 	hi2c.Init.OwnAddress1 = I2C_OWNADDRESS1;
@@ -58,6 +58,13 @@ retType DEV_I2CRead(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 	ret |= HAL_I2C_Master_Receive(&hi2c, slave_addr, pdata, size, I2C_TIMEOUT);
 	return ret;
 
+}
+
+retType DEV_I2CIsReady(uint16_t slave_addr){
+
+	retType ret = API_OK;
+	ret = HAL_I2C_IsDeviceReady(&hi2c, slave_addr, 2, 1000);
+	return ret;
 }
 //Aca viene todo lo de I2C
 //Definir Macros

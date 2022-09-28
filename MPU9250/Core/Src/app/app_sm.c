@@ -26,7 +26,7 @@ retType APP_SMInit(void){
 retType APP_SMProccess(void){
 
 	retType ret = API_OK;
-	uint8_t str[] = "Data to print\n";
+	uint8_t str[4];
 
 	switch(states){
 		case SM_INIT:
@@ -46,7 +46,9 @@ retType APP_SMProccess(void){
 				ret |= APP_MPU9250ReadGyro(read_buff->gyro);
 				first_time = false;
 			}
+			it_i2c = true;
 			if(ret == API_OK && it_i2c == true){
+				str[0] = 'G';
 				states = SM_READACCL;
 				it_i2c = false;
 				first_time = true;
@@ -57,21 +59,27 @@ retType APP_SMProccess(void){
 				ret |= APP_MPU9250ReadAccl(read_buff->accl);
 				first_time = false;
 			}
+			it_i2c = true;
 			if(ret == API_OK && it_i2c == true){
+				str[1] = 'A';
 				states = SM_READTEMP;
 				it_i2c = false;
 				first_time = true;
 			}
+			break;
 		case SM_READTEMP:
 			if(first_time){
 				ret |= APP_MPU9250ReadTemp(read_buff->temp);
 				first_time = false;
 			}
+			it_i2c = true;
 			if(ret == API_OK && it_i2c == true){
+				str[3] = 'T';
 				states = SM_PRINT;
 				it_i2c = false;
 				first_time = true;
 			};
+			break;
 		case SM_PRINT:
 			DEV_UARTSendStringSize(str, sizeof(str));
 			if(ret == API_OK) states = SM_READGYRO;
