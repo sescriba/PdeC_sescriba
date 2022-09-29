@@ -15,7 +15,7 @@
 
 //Define UART functions
 retType DEV_UARTInit(void);
-retType DEV_UARTSendString(uint8_t * pstring);
+retType DEV_UARTSendChar(uint8_t * pstring);
 retType DEV_UARTSendStringSize(uint8_t * pstring, uint16_t size);
 retType DEV_UARTReceiveStringSize(uint8_t * pstring, uint16_t size);
 

@@ -16,6 +16,8 @@ typedef enum{
 	SM_READACCL,
 	SM_READTEMP,
 	SM_PRINT,
+	SM_IDLE,
+	SM_ERROR,
 } State_t;
 
 retType APP_SMInit(void);

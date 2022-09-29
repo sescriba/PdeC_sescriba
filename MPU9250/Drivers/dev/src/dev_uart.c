@@ -27,12 +27,11 @@ UART_HandleTypeDef huart;
   * @param  uint8_t *
   * @retval Void
   */
-retType DEV_UARTSendString(uint8_t * pstring){
+retType DEV_UARTSendChar(uint8_t * pstring){
 
 	retType ret = API_OK;
 
-	if(sizeof(pstring) == 0) return API_ERROR;
-	ret |= HAL_UART_Transmit(&huart, pstring, sizeof(pstring), TIME_OUT);
+	ret |= HAL_UART_Transmit(&huart, pstring, 1, TIME_OUT);
 
 	return ret;
 }

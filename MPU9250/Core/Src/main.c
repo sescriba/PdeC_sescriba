@@ -27,10 +27,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "app_sm.h"
+#include "stm32f4xx_nucleo_144.h"
 
 /* Private define ------------------------------------------------------------*/
-#define LED_F1 500
-#define LED_F2 100
 
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
@@ -61,7 +60,7 @@ int main(void)
 
 	/* Initialize BSP Led for LED1, LED2 and LED3 */
 //	BSP_LED_Init(LED1);
-//	BSP_LED_Init(LED2);
+	BSP_LED_Init(LED2);
 //	BSP_LED_Init(LED3);
 //	/* Initialize BSP BUTTON_USER */
 //	BSP_PB_Init(BUTTON_USER, BUTTON_MODE_GPIO);
@@ -78,6 +77,7 @@ int main(void)
 	{
 		//Update FSM
 		ret |= APP_SMProccess();
+		if(ret != API_OK) Error_Handler();
 //		if(delayRead(&delay_leds)) BSP_LED_Toggle(LED2);
 	}
 }
@@ -159,7 +159,7 @@ static void SystemClock_Config(void)
 static void Error_Handler(void)
 {
 	/* Turn LED2 on */
-//	BSP_LED_On(LED2);
+	BSP_LED_On(LED2);
 	while (1)
 	{
 	}
