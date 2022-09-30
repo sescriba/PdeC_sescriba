@@ -1,14 +1,15 @@
-/*
- * mpu9250.c
- *
- *  Created on: 22 sep. 2022
- *      Author: Santiago
+/**
+ ******************************************************************************
+ * @file    Drivers/dev/src/mpu9250.c
+ * @author  Santiago Escriba
+ * @brief   File with High Level driver for MPU9250.
+ ******************************************************************************
  */
 
-
+/* Includes ------------------------------------------------------------------*/
 #include "mpu9250.h"
-#include "port.h"
 
+/* Private define ------------------------------------------------------------*/
 #define MPU9250_SLAVEADDR 0xD0
 #define MPU9250_PWR_MGMT_1 0x6B
 #define MPU9250_CONFIG_AD 0x1A
@@ -30,10 +31,20 @@
 #define MPU9250_GYRO_ZOUT_H 0x47
 #define MPU9250_GYRO_ZOUT_L 0x48
 
+/* Private function prototypes -----------------------------------------------*/
 static retType gyro_convert(uint16_t axis, uint16_t * paxis);
 static retType accl_convert(uint16_t axis, uint16_t * paxis);
 static retType temp_convert(uint16_t temp, uint16_t * ptemp);
 
+/* Exposed Function  ---------------------------------------------------------*/
+/**
+ * @brief  MPU9250 Write word
+ * @param
+ * 		addr2write	[I] - MPU Slave address
+ * 		pdata 		[I] - Data Buffer
+ * 		size 		[I] - Data Buffer size
+ * @retval ret - Return API value
+ */
 retType APP_MPU9250Write(uint8_t addr2write, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
@@ -47,6 +58,14 @@ retType APP_MPU9250Write(uint8_t addr2write, uint8_t * pdata, uint16_t size){
 	return ret;
 }
 
+/**
+ * @brief  MPU9250 Read word
+ * @param
+ * 		addr2read	[I] - MPU Slave address
+ * 		pdata 		[O] - Data Buffer
+ * 		size 		[I] - Data Buffer size
+ * @retval ret - Return API value
+ */
 retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
@@ -61,6 +80,12 @@ retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
 
 }
 
+/**
+ * @brief  MPU9250 Initializer function
+ * @param
+ * 		void
+ * @retval ret - Return API value
+ */
 retType APP_MPU9250Init(void){
 
 	retType ret = API_OK;
@@ -81,6 +106,12 @@ retType APP_MPU9250Init(void){
 
 }
 
+/**
+ * @brief  MPU9250 Read Gyroscope value per Axis
+ * @param
+ * 		gyro [O] - Gyroscope structure with axes
+ * @retval ret - Return API value
+ */
 retType APP_MPU9250ReadGyro(axis_t * gyro){
 
 	retType ret = API_OK;
@@ -98,6 +129,12 @@ retType APP_MPU9250ReadGyro(axis_t * gyro){
 	return ret;
 }
 
+/**
+ * @brief  MPU9250 Read Accelerometer value per Axis
+ * @param
+ * 		accl [O] - Accelerometer structure with axes
+ * @retval ret - Return API value
+ */
 retType APP_MPU9250ReadAccl(axis_t * accl){
 
 	retType ret = API_OK;
@@ -115,6 +152,12 @@ retType APP_MPU9250ReadAccl(axis_t * accl){
 	return ret;
 }
 
+/**
+ * @brief  MPU9250 Read Temperature value
+ * @param
+ * 		temp [O] - Temperature value
+ * @retval ret - Return API value
+ */
 retType APP_MPU9250ReadTemp(uint16_t * temp){
 
 	retType ret = API_OK;
@@ -126,6 +169,13 @@ retType APP_MPU9250ReadTemp(uint16_t * temp){
 	return ret;
 }
 
+/**
+ * @brief  MPU9250 Gyroscope convert value (Intern function)
+ * @param
+ * 		axis [I] - Axis value to convert
+ * 		paxis [O] - Value converted
+ * @retval ret - Return API value
+ */
 static retType gyro_convert(uint16_t axis, uint16_t * paxis){
 
 	retType ret = API_OK;
@@ -134,6 +184,13 @@ static retType gyro_convert(uint16_t axis, uint16_t * paxis){
 	return ret;
 }
 
+/**
+ * @brief  MPU9250 Accelerometer convert value (Intern function)
+ * @param
+ * 		axis [I] - Axis value to convert
+ * 		paxis [O] - Value converted
+ * @retval ret - Return API value
+ */
 static retType accl_convert(uint16_t axis, uint16_t * paxis){
 
 	retType ret = API_OK;
@@ -142,6 +199,13 @@ static retType accl_convert(uint16_t axis, uint16_t * paxis){
 	return ret;
 }
 
+/**
+ * @brief  MPU9250 Temperature convert value (Intern function)
+ * @param
+ * 		axis [I] - Axis value to convert
+ * 		paxis [O] - Value converted
+ * @retval ret - Return API value
+ */
 static retType temp_convert(uint16_t temp, uint16_t * ptemp){
 
 	retType ret = API_OK;

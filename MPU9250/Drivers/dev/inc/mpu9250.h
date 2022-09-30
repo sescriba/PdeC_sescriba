@@ -1,27 +1,40 @@
-/*
- * mpu9250.h
- *
- *  Created on: 22 sep. 2022
- *      Author: Santiago
+/**
+ ******************************************************************************
+ * @file    Drivers/dev/inc/mpu9250.h
+ * @author  Santiago Escriba
+ * @brief   Header for mpu9250.c
+ * 			File with High Level driver for MPU9250.
+ ******************************************************************************
  */
 
+/* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef DEV_INC_MPU9250_H_
 #define DEV_INC_MPU9250_H_
 
+/* Includes ------------------------------------------------------------------*/
 #include "types.h"
+#include "port.h"
 
+/* Exposed types -------------------------------------------------------------*/
+/**
+  * @brief  axis_t Axes structure definition
+  */
 typedef struct{
 	uint16_t x;
 	uint16_t y;
 	uint16_t z;
 }axis_t;
 
+/**
+  * @brief  MPU9250_t MPU9250 values structure definition
+  */
 typedef struct{
 	axis_t gyro;
 	axis_t accl;
 	uint16_t temp;
 }MPU9250_t;
 
+/* Exposed function prototypes -----------------------------------------------*/
 retType APP_MPU9250Write(uint8_t addr2write, uint8_t * pdata, uint16_t size);
 retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size);
 retType APP_MPU9250Init(void);

@@ -1,36 +1,54 @@
-/*
- * app_sm.c
- *
- *  Created on: 26 sep. 2022
- *      Author: Santiago
+/**
+ ******************************************************************************
+ * @file     Core/Src/app/app_sm.c
+ * @author  Santiago Escriba
+ * @brief   File with State Machine definition.
+ ******************************************************************************
  */
 
+/* Includes ------------------------------------------------------------------*/
 #include "app_sm.h"
-#include "mpu9250.h"
-#include "dev_uart.h"
-#include "port.h"
-#include "string.h"
 
+/* Private define ------------------------------------------------------------*/
+#define READ_TIME 1000
+
+/* Private variables ---------------------------------------------------------*/
 State_t states;
-State_t prv_state;
+State_t new_state;
 MPU9250_t read_buff;
 bool_t it_i2c;
 bool_t first_time;
+ttimer_t idle;
 
+/* Private function prototypes -----------------------------------------------*/
 static retType print_string(MPU9250_t * data);
 
+/* Exposed Function  ---------------------------------------------------------*/
+/**
+ * @brief  SM Initialization
+ * @param
+ * 		void
+ * @retval ret - Return API value
+ */
 retType APP_SMInit(void){
 
 	retType ret = API_OK;
 
 	states = SM_INIT;
+	ret |= DEV_TimerInit(&idle, READ_TIME);
 	return ret;
 }
 
+/**
+ * @brief  SM Set and work according current state
+ * @param
+ * 		void
+ * @retval ret - Return API value
+ */
 retType APP_SMProccess(void){
 
 	retType ret = API_OK;
-	uint8_t * str;
+	bool_t done = false;
 
 	switch(states){
 		case SM_INIT:
@@ -46,9 +64,8 @@ retType APP_SMProccess(void){
 			}
 			ret |= APP_MPU9250Init();
 			if(ret == API_OK){
-				states = SM_READGYRO;
-				it_i2c = false;
-				first_time = true;
+				new_state = SM_READGYRO;
+				states = SM_IDLE;
 			}
 			else{
 				states = SM_ERROR;
@@ -56,71 +73,43 @@ retType APP_SMProccess(void){
 			}
 			break;
 		case SM_READGYRO:
-			if(first_time){
-				ret |= APP_MPU9250ReadGyro(&read_buff.gyro);
-				if(ret != API_OK){
-					states = SM_ERROR;
-					break;
-				}
-				first_time = false;
+			ret |= APP_MPU9250ReadGyro(&read_buff.gyro);
+			if(ret != API_OK){
+				states = SM_ERROR;
+				break;
 			}
-			if(it_i2c == true){
-				states = SM_READACCL;
-				it_i2c = false;
-				first_time = true;
-			}
-			else{
-				prv_state = states;
-				states = SM_IDLE;
-			}
+			new_state = SM_READACCL;
+			states = SM_IDLE;
 			break;
 		case SM_READACCL:
-			if(first_time){
-				ret |= APP_MPU9250ReadAccl(&read_buff.accl);
-				if(ret != API_OK){
-					states = SM_ERROR;
-					break;
-				}
-				first_time = false;
+			ret |= APP_MPU9250ReadAccl(&read_buff.accl);
+			if(ret != API_OK){
+				states = SM_ERROR;
+				break;
 			}
-			if(it_i2c == true){
-				states = SM_READTEMP;
-				it_i2c = false;
-				first_time = true;
-			}
-			else{
-				prv_state = states;
-				states = SM_IDLE;
-			}
+			new_state = SM_READTEMP;
+			states = SM_IDLE;
 			break;
 		case SM_READTEMP:
-			if(first_time){
-				ret |= APP_MPU9250ReadTemp(&read_buff.temp);
-				if(ret != API_OK){
-					states = SM_ERROR;
-					break;
-				}
-				first_time = false;
+			ret |= APP_MPU9250ReadTemp(&read_buff.temp);
+			if(ret != API_OK){
+				states = SM_ERROR;
+				break;
 			}
-			if(it_i2c == true){
-				states = SM_PRINT;
-				it_i2c = false;
-				first_time = true;
-			}
-			else{
-				prv_state = states;
-				states = SM_IDLE;
-			}
+			new_state = SM_PRINT;
+			states = SM_IDLE;
 			break;
 		case SM_PRINT:
 			ret |= print_string(&read_buff);
-			if(ret == API_OK) states = SM_READGYRO;
+			if(ret == API_OK){
+				new_state = SM_READGYRO;
+				states = SM_IDLE;
+			}
 			break;
 		case SM_IDLE:
-			it_i2c = true;	//debug
-			if(it_i2c == true){
-				states = prv_state;
-				it_i2c = false;
+			ret |= DEV_TimerRead(&idle, &done);
+			if(done == true){
+				states = new_state;
 			}
 			break;
 		case SM_ERROR:
@@ -131,15 +120,21 @@ retType APP_SMProccess(void){
 	return ret;
 }
 
+/**
+ * @brief  Print a string with MPU9250 information via UART
+ * @param
+ * 		data	[I] - MPU9250 Data to print
+ * @retval ret - Return API value
+ */
 static retType print_string(MPU9250_t * data){
 
 	retType ret = API_OK;
-	uint8_t buff[128] = {0};
+	uint8_t buff[256] = {0};
 	uint8_t value[5] = {0};
 	uint8_t str[] = "Data returned: ";
-	uint8_t str_gyro[] = "\nGyroscope:";
-	uint8_t str_accl[] = "\nAccelerometer:";
-	uint8_t str_temp[] = "\nTemperature:";
+	uint8_t str_gyro[] = "\nGyroscope: ";
+	uint8_t str_accl[] = "\nAccelerometer: ";
+	uint8_t str_temp[] = "\nTemperature: ";
 	uint8_t str_x[] = "\nAxis X: ";
 	uint8_t str_y[] = "\nAxis Y: ";
 	uint8_t str_z[] = "\nAxis Z: ";
@@ -171,9 +166,9 @@ static retType print_string(MPU9250_t * data){
 	strcat(buff, str_temp);
 	itoa(data->temp, value, 10);
 	strcat(buff, value);
-	strcat(buff, "C");
+	strcat(buff, "*C\n\n");
 
-	for(i = 0; i<128; i++){
+	for(i = 0; i<256; i++){
 		if(buff[i] == '\0') return ret;
 		DEV_UARTSendChar(&buff[i]);
 	}

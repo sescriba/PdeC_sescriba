@@ -1,0 +1,79 @@
+/**
+  ******************************************************************************
+  * @file    API_delay.c
+  * @author  MCD Application Team
+  * @brief   Delay driver file.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
+
+/* Includes ------------------------------------------------------------------*/
+#include "dev_timer.h"
+
+/* Private functions ---------------------------------------------------------*/
+
+/**
+  * @brief  Time initialization
+  * @param  delay_t * delay, tick_t duration
+  * @retval Void
+  */
+retType DEV_TimerInit(timer_t * timer, tick_t duration){
+
+	retType ret = API_OK;
+
+	if(timer == 0 || duration <= 0 || duration > MAX_DELAY) return API_ERROR;
+	timer->startTime = 0;
+	timer->duration = duration;
+	timer->running = false;
+	return ret;
+}
+
+/**
+  * @brief  Time control
+  * @param  delay_t * delay
+  * @retval bool_t end
+  */
+retType DEV_TimerRead(timer_t * timer, bool_t * done){
+
+	retType ret = API_OK;
+	uint32_t time = 0;
+
+	if(timer->running == false){	//Initialization check
+		timer->startTime = HAL_GetTick();
+		timer->running = true;
+	}
+	else{
+		time = HAL_GetTick() - (timer->startTime);		//Get difference
+		if(time >= delay->duration){		//Time control
+			timer->running = false;
+			*done = true;
+			return ret;
+		}
+	}
+	*done = false;
+	return ret;
+}
+
+/**
+  * @brief  Time reassignation
+  * @param  delay_t * delay
+  * @retval bool_t end
+  */
+retType DEV_TimerWrite(timer_t * timer, tick_t duration){
+
+	retType ret = API_OK;
+
+	if(duration <= 0) return API_ERROR;
+	timer->duration = duration;
+	return ret;
+}

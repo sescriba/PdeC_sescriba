@@ -5,16 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Drivers/dev/src/dev_timer.c \
 ../Drivers/dev/src/dev_uart.c \
 ../Drivers/dev/src/mpu9250.c \
 ../Drivers/dev/src/port.c 
 
 OBJS += \
+./Drivers/dev/src/dev_timer.o \
 ./Drivers/dev/src/dev_uart.o \
 ./Drivers/dev/src/mpu9250.o \
 ./Drivers/dev/src/port.o 
 
 C_DEPS += \
+./Drivers/dev/src/dev_timer.d \
 ./Drivers/dev/src/dev_uart.d \
 ./Drivers/dev/src/mpu9250.d \
 ./Drivers/dev/src/port.d 
@@ -27,7 +30,7 @@ Drivers/dev/src/%.o Drivers/dev/src/%.su: ../Drivers/dev/src/%.c Drivers/dev/src
 clean: clean-Drivers-2f-dev-2f-src
 
 clean-Drivers-2f-dev-2f-src:
-	-$(RM) ./Drivers/dev/src/dev_uart.d ./Drivers/dev/src/dev_uart.o ./Drivers/dev/src/dev_uart.su ./Drivers/dev/src/mpu9250.d ./Drivers/dev/src/mpu9250.o ./Drivers/dev/src/mpu9250.su ./Drivers/dev/src/port.d ./Drivers/dev/src/port.o ./Drivers/dev/src/port.su
+	-$(RM) ./Drivers/dev/src/dev_timer.d ./Drivers/dev/src/dev_timer.o ./Drivers/dev/src/dev_timer.su ./Drivers/dev/src/dev_uart.d ./Drivers/dev/src/dev_uart.o ./Drivers/dev/src/dev_uart.su ./Drivers/dev/src/mpu9250.d ./Drivers/dev/src/mpu9250.o ./Drivers/dev/src/mpu9250.su ./Drivers/dev/src/port.d ./Drivers/dev/src/port.o ./Drivers/dev/src/port.su
 
 .PHONY: clean-Drivers-2f-dev-2f-src
 

@@ -1,0 +1,25 @@
+/*
+ * API_UART.h
+ *
+ *  Created on: 24 sep. 2022
+ *      Author: Santiago
+ */
+
+#ifndef DEV_INC_DEV_UART_H_
+#define DEV_INC_DEV_UART_H_
+
+/* Includes ------------------------------------------------------------------*/
+#include "types.h"
+
+/* Exported typedefine ------------------------------------------------------------*/
+
+//Define UART functions
+retType DEV_UARTInit(void);
+retType DEV_UARTSendChar(uint8_t * pstring);
+retType DEV_UARTSendStringSize(uint8_t * pstring, uint16_t size);
+retType DEV_UARTReceiveStringSize(uint8_t * pstring, uint16_t size);
+
+
+
+
+#endif /* DEV_INC_DEV_UART_H_ */

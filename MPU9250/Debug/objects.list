@@ -25,6 +25,7 @@
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o"
+"./Drivers/dev/src/dev_timer.o"
 "./Drivers/dev/src/dev_uart.o"
 "./Drivers/dev/src/mpu9250.o"
 "./Drivers/dev/src/port.o"

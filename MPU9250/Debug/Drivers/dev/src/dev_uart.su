@@ -1,4 +1,4 @@
-../Drivers/dev/src/dev_uart.c:30:9:DEV_UARTSendChar	24	static
-../Drivers/dev/src/dev_uart.c:44:9:DEV_UARTSendStringSize	24	static
-../Drivers/dev/src/dev_uart.c:59:9:DEV_UARTReceiveStringSize	24	static
-../Drivers/dev/src/dev_uart.c:74:9:DEV_UARTInit	40	static
+../Drivers/dev/src/dev_uart.c:33:9:DEV_UARTSendChar	24	static
+../Drivers/dev/src/dev_uart.c:49:9:DEV_UARTSendStringSize	24	static
+../Drivers/dev/src/dev_uart.c:66:9:DEV_UARTReceiveStringSize	24	static
+../Drivers/dev/src/dev_uart.c:82:9:DEV_UARTInit	40	static
