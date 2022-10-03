@@ -10,7 +10,9 @@
 #include "mpu9250.h"
 
 /* Private define ------------------------------------------------------------*/
-#define MPU9250_SLAVEADDR 0xD0
+
+//MPU9250 Register set
+#define MPU9250_SLAVEADDR 0xD0 //(0x68<<0x1)
 #define MPU9250_PWR_MGMT_1 0x6B
 #define MPU9250_CONFIG_AD 0x1A
 #define MPU9250_GYRO_CONFIG 0x1B
@@ -31,9 +33,13 @@
 #define MPU9250_GYRO_ZOUT_H 0x47
 #define MPU9250_GYRO_ZOUT_L 0x48
 
+//Module scales
+#define ACCL_SCALE (16.0*9.81/32768.0)
+#define GYRO_SCALE (2000.0/32768.0)
+
 /* Private function prototypes -----------------------------------------------*/
-static retType gyro_convert(uint16_t axis, uint16_t * paxis);
-static retType accl_convert(uint16_t axis, uint16_t * paxis);
+static retType gyro_convert(uint16_t axis, float * paxis);
+static retType accl_convert(uint16_t axis, float * paxis);
 static retType temp_convert(uint16_t temp, uint16_t * ptemp);
 
 /* Exposed Function  ---------------------------------------------------------*/
@@ -52,6 +58,7 @@ retType APP_MPU9250Write(uint8_t addr2write, uint8_t * pdata, uint16_t size){
 	if(size <= 0) ret = API_ERROR;
 	if(ret != API_OK) return ret;
 
+	//Write a word on MPU9250 device
 	ret |= DEV_I2CWrite(MPU9250_SLAVEADDR, &addr2write, 1);
 	ret |= DEV_I2CWrite(MPU9250_SLAVEADDR, pdata, size);
 
@@ -70,9 +77,10 @@ retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 
-	if(size <= 0) ret = API_ERROR;
+	if(size == 0) ret = API_ERROR;
 	if(ret != API_OK) return ret;
 
+	//Read a word from MPU9250 device
 	ret |= DEV_I2CWrite(MPU9250_SLAVEADDR, &addr2read, 1);
 	ret |= DEV_I2CRead(MPU9250_SLAVEADDR, pdata, size);
 
@@ -90,18 +98,24 @@ retType APP_MPU9250Init(void){
 
 	retType ret = API_OK;
 
+	//Check if MPU communication via I2C is ready
 	ret |= DEV_I2CIsReady(MPU9250_SLAVEADDR);
 	if(ret != API_OK) return ret;
 
+	//Set MPU configuration
+	//General configuration: CLKSEL
 	ret |= APP_MPU9250Write(MPU9250_PWR_MGMT_1, (uint8_t*)0x0, 1);
 	if(ret != API_OK) return ret;
 	ret |= APP_MPU9250Write(MPU9250_PWR_MGMT_1, (uint8_t*)0x1, 1);
 	if(ret != API_OK) return ret;
-	ret |= APP_MPU9250Write(MPU9250_GYRO_CONFIG, (uint8_t*)0x8, 1);
-	ret |= APP_MPU9250Write(MPU9250_ACCEL_CONFIG_1, (uint8_t*)0x8, 1);
-	ret |= APP_MPU9250Write(MPU9250_ACCEL_CONFIG_2, (uint8_t*)0x5, 1);
+	//Gyroscope configuration: Scale
+	ret |= APP_MPU9250Write(MPU9250_GYRO_CONFIG, (uint8_t*)0x18, 1);
+	ret |= APP_MPU9250Write(MPU9250_CONFIG_AD, (uint8_t*)0x7, 1);
 	if(ret != API_OK) return ret;
-	ret |= APP_MPU9250Write(MPU9250_CONFIG_AD, (uint8_t*)0x5, 1);
+	//Accelerometer configuration: Scale
+	ret |= APP_MPU9250Write(MPU9250_ACCEL_CONFIG_1, (uint8_t*)0x18, 1);
+	ret |= APP_MPU9250Write(MPU9250_ACCEL_CONFIG_2, (uint8_t*)0x7, 1);
+
 	return ret;
 
 }
@@ -119,10 +133,12 @@ retType APP_MPU9250ReadGyro(axis_t * gyro){
 	uint16_t aux_y = 0;
 	uint16_t aux_z = 0;
 
+	//Read Gyroscope values for Axes X, Y and Z
 	ret |= APP_MPU9250Read(MPU9250_GYRO_XOUT_H, (uint8_t*)&aux_x, 2);
 	ret |= APP_MPU9250Read(MPU9250_GYRO_YOUT_H, (uint8_t*)&aux_y, 2);
 	ret |= APP_MPU9250Read(MPU9250_GYRO_ZOUT_H, (uint8_t*)&aux_z, 2);
 
+	//Convert to human scale Gyroscope values for Axes X, Y and Z
 	ret |= gyro_convert(aux_x, &(gyro->x));
 	ret |= gyro_convert(aux_y, &(gyro->y));
 	ret |= gyro_convert(aux_z, &(gyro->z));
@@ -142,10 +158,12 @@ retType APP_MPU9250ReadAccl(axis_t * accl){
 	uint16_t aux_y = 0;
 	uint16_t aux_z = 0;
 
+	//Read Accelerometer values for Axes X, Y and Z
 	ret |= APP_MPU9250Read(MPU9250_ACCEL_XOUT_H, (uint8_t*)&aux_x, 2);
 	ret |= APP_MPU9250Read(MPU9250_ACCEL_YOUT_H, (uint8_t*)&aux_y, 2);
 	ret |= APP_MPU9250Read(MPU9250_ACCEL_ZOUT_H, (uint8_t*)&aux_z, 2);
 
+	//Convert to human scale Accelerometer values for Axes X, Y and Z
 	ret |= accl_convert(aux_x, &(accl->x));
 	ret |= accl_convert(aux_y, &(accl->y));
 	ret |= accl_convert(aux_z, &(accl->z));
@@ -163,8 +181,10 @@ retType APP_MPU9250ReadTemp(uint16_t * temp){
 	retType ret = API_OK;
 	uint16_t aux_temp = 0;
 
+	//Read Temperature value
 	ret |= APP_MPU9250Read(MPU9250_TEMP_OUT_H, (uint8_t*)&aux_temp, 2);
 
+	//Convert to human scale Temperature value
 	ret |= temp_convert(aux_temp, temp);
 	return ret;
 }
@@ -176,11 +196,16 @@ retType APP_MPU9250ReadTemp(uint16_t * temp){
  * 		paxis [O] - Value converted
  * @retval ret - Return API value
  */
-static retType gyro_convert(uint16_t axis, uint16_t * paxis){
+static retType gyro_convert(uint16_t axis, float * paxis){
 
 	retType ret = API_OK;
+	uint8_t aux = 0;
 
-	*paxis = axis;
+	//Fix big/little endian
+	aux = (axis&(0xff00))>>8;
+	axis = (axis&0x00ff)<<8;
+	axis |= aux;
+	*paxis = axis*GYRO_SCALE;
 	return ret;
 }
 
@@ -191,11 +216,16 @@ static retType gyro_convert(uint16_t axis, uint16_t * paxis){
  * 		paxis [O] - Value converted
  * @retval ret - Return API value
  */
-static retType accl_convert(uint16_t axis, uint16_t * paxis){
+static retType accl_convert(uint16_t axis, float * paxis){
 
 	retType ret = API_OK;
+	uint8_t aux = 0;
 
-	*paxis = axis;
+	//Fix big/little endian
+	aux = (axis&(0xff00))>>8;
+	axis = (axis&0x00ff)<<8;
+	axis |= aux;
+	*paxis = axis*ACCL_SCALE;
 	return ret;
 }
 
@@ -209,7 +239,14 @@ static retType accl_convert(uint16_t axis, uint16_t * paxis){
 static retType temp_convert(uint16_t temp, uint16_t * ptemp){
 
 	retType ret = API_OK;
+	uint8_t aux = 0;
 
+	//Fix big/little endian
+	aux = (temp&(0xff00))>>8;
+	temp = (temp&0x00ff)<<8;
+	temp |= aux;
+
+	//Apply scale and convertion to °C
 	*ptemp = (temp - 0)/321 + 21;
 	return ret;
 }

@@ -20,9 +20,9 @@
   * @brief  axis_t Axes structure definition
   */
 typedef struct{
-	uint16_t x;
-	uint16_t y;
-	uint16_t z;
+	float x;
+	float y;
+	float z;
 }axis_t;
 
 /**

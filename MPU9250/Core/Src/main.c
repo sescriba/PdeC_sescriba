@@ -1,26 +1,8 @@
-/*
- * main.c
- *
- *  Created on: Sep 25, 2022
- *      Author: Santiago
- */
-
 /**
  ******************************************************************************
- * @file    /Src/main.c
- * @author  MCD Application Team
- * @brief   Practicas.
- ******************************************************************************
- * @attention
- *
- * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
- * All rights reserved.</center></h2>
- *
- * This software component is licensed by ST under BSD 3-Clause license,
- * the "License"; You may not use this file except in compliance with the
- * License. You may obtain a copy of the License at:
- *                        opensource.org/licenses/BSD-3-Clause
- *
+ * @file     Core/Src/main.c
+ * @author  Santiago Escriba
+ * @brief   Main program file.
  ******************************************************************************
  */
 
@@ -37,8 +19,8 @@ static void Error_Handler(void);
 
 /**
  * @brief  Main program
- * @param  None
- * @retval None
+ * @param  void
+ * @retval void
  */
 int main(void)
 {
@@ -58,19 +40,11 @@ int main(void)
 	/* Configure the system clock to 180 MHz */
 	SystemClock_Config();
 
-	/* Initialize BSP Led for LED1, LED2 and LED3 */
-//	BSP_LED_Init(LED1);
+	/* Initialize BSP Led for LED2 */
 	BSP_LED_Init(LED2);
-//	BSP_LED_Init(LED3);
-//	/* Initialize BSP BUTTON_USER */
-//	BSP_PB_Init(BUTTON_USER, BUTTON_MODE_GPIO);
-
 
 	//FSM initialization
 	ret |= APP_SMInit();
-
-	//Initialize LED2 Delay
-//	delayInit(&delay_leds, LED_F1);
 
 	/* Infinite loop */
 	while (1)
@@ -78,7 +52,6 @@ int main(void)
 		//Update FSM
 		ret |= APP_SMProccess();
 		if(ret != API_OK) Error_Handler();
-//		if(delayRead(&delay_leds)) BSP_LED_Toggle(LED2);
 	}
 }
 
@@ -101,8 +74,8 @@ int main(void)
  *            VDD(V)                         = 3.3
  *            Main regulator output voltage  = Scale1 mode
  *            Flash Latency(WS)              = 5
- * @param  None
- * @retval None
+ * @param  void
+ * @retval void
  */
 static void SystemClock_Config(void)
 {
@@ -153,8 +126,8 @@ static void SystemClock_Config(void)
 }
 /**
  * @brief  This function is executed in case of error occurrence.
- * @param  None
- * @retval None
+ * @param  void
+ * @retval void
  */
 static void Error_Handler(void)
 {
@@ -162,6 +135,7 @@ static void Error_Handler(void)
 	BSP_LED_On(LED2);
 	while (1)
 	{
+		//Error Happened
 	}
 }
 
@@ -171,7 +145,7 @@ static void Error_Handler(void)
  *         where the assert_param error has occurred.
  * @param  file: pointer to the source file name
  * @param  line: assert_param error line source number
- * @retval None
+ * @retval void
  */
 void assert_failed(uint8_t *file, uint32_t line)
 {
@@ -184,13 +158,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 	}
 }
 #endif
-
-/**
- * @}
- */
-
-/**
- * @}
- */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

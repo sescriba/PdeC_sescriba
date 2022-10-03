@@ -26,6 +26,7 @@ I2C_HandleTypeDef  hi2c;
  */
 retType DEV_I2CInit(void){
 
+	//Define I2C variable configuration
 	retType ret = API_OK;
 	hi2c.Instance = I2C2;
 	hi2c.Init.ClockSpeed = I2C_CLOCKSPEED;
@@ -36,7 +37,7 @@ retType DEV_I2CInit(void){
 	hi2c.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
 	hi2c.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 
-
+	//Set configuration and initialize
 	ret |= HAL_I2C_Init(&hi2c);
 	return ret;
 
@@ -52,6 +53,7 @@ retType DEV_I2CDeInit(void){
 
 	retType ret = API_OK;
 
+	//Deinitialize I2C communication
 	ret |= HAL_I2C_DeInit(&hi2c);
 	return ret;
 }
@@ -68,9 +70,12 @@ retType DEV_I2CWrite(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 
+	if(slave_addr==0 || size == 0) return API_ERROR;
+	//Send a word via I2C
 	ret |= HAL_I2C_Master_Transmit_IT(&hi2c, slave_addr, pdata, size);
 	if(ret != API_OK) return ret;
 
+	//Wait for IT. Here you can do anything or just wait
 	while(hi2c.State != HAL_I2C_STATE_READY){/**we can do anything*/}
 	return ret;
 }
@@ -87,9 +92,12 @@ retType DEV_I2CRead(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 
 	retType ret = API_OK;
 
+	if(slave_addr==0 || size == 0) return API_ERROR;
+	//Receive a word via I2C
 	ret |= HAL_I2C_Master_Receive_IT(&hi2c, slave_addr, pdata, size);
 	if(ret != API_OK) return ret;
 
+	//Wait for IT. Here you can do anything or just wait
 	while(hi2c.State != HAL_I2C_STATE_READY){/**we can do anything*/}
 	return ret;
 }
@@ -103,6 +111,9 @@ retType DEV_I2CRead(uint16_t slave_addr, uint8_t * pdata, uint16_t size){
 retType DEV_I2CIsReady(uint16_t slave_addr){
 
 	retType ret = API_OK;
+
+	if(slave_addr==0) return API_ERROR;
+	//Check if I2C communication is ready
 	ret = HAL_I2C_IsDeviceReady(&hi2c, slave_addr, 2, 1000);
 	return ret;
 }

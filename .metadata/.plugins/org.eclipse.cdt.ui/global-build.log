@@ -1,177 +1,9 @@
-19:12:52 **** Incremental Build of configuration Debug for project MPU9250 ****
+13:35:41 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
-arm-none-eabi-gcc "../Drivers/dev/src/dev_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/dev_timer.d" -MT"Drivers/dev/src/dev_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/dev_timer.o"
-arm-none-eabi-gcc "../Drivers/dev/src/dev_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/dev_uart.d" -MT"Drivers/dev/src/dev_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/dev_uart.o"
-arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
 arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/app/app_sm.c: In function 'print_string':
-../Core/Src/app/app_sm.c:143:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  143 |  strcat(buff, str);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:143:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  143 |  strcat(buff, str);
-      |               ^~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:144:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  144 |  strcat(buff, str_gyro);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:144:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  144 |  strcat(buff, str_gyro);
-      |               ^~~~~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:145:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  145 |  strcat(buff, str_x);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:145:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  145 |  strcat(buff, str_x);
-      |               ^~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:146:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
-  146 |  itoa(data->gyro.x, value, 10);
-      |  ^~~~
-../Core/Src/app/app_sm.c:147:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  147 |  strcat(buff, value);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:147:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  147 |  strcat(buff, value);
-      |               ^~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:148:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  148 |  strcat(buff, str_y);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:148:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  148 |  strcat(buff, str_y);
-      |               ^~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:150:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  150 |  strcat(buff, value);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:150:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  150 |  strcat(buff, value);
-      |               ^~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:151:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  151 |  strcat(buff, str_z);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:151:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  151 |  strcat(buff, str_z);
-      |               ^~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
-../Core/Src/app/app_sm.c:153:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  153 |  strcat(buff, value);
-      |         ^~~~
-      |         |
-      |         uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                ^
-../Core/Src/app/app_sm.c:153:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  153 |  strcat(buff, value);
-      |               ^~~~~
-      |               |
-      |               uint8_t * {aka unsigned char *}
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
-                 from ../Core/Src/app/app_sm.c:10:
-c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   34 | char  *strcat (char *__restrict, const char *__restrict);
-      |                                  ^
 ../Core/Src/app/app_sm.c:155:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  155 |  strcat(buff, str_accl);
+  155 |  strcat(buff, str);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -181,8 +13,8 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
 ../Core/Src/app/app_sm.c:155:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  155 |  strcat(buff, str_accl);
-      |               ^~~~~~~~
+  155 |  strcat(buff, str);
+      |               ^~~
       |               |
       |               uint8_t * {aka unsigned char *}
 In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
@@ -191,7 +23,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
 ../Core/Src/app/app_sm.c:156:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  156 |  strcat(buff, str_x);
+  156 |  strcat(buff, str_gyro);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -201,8 +33,8 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
 ../Core/Src/app/app_sm.c:156:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  156 |  strcat(buff, str_x);
-      |               ^~~~~
+  156 |  strcat(buff, str_gyro);
+      |               ^~~~~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
 In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
@@ -210,8 +42,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
-../Core/Src/app/app_sm.c:158:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  158 |  strcat(buff, value);
+../Core/Src/app/app_sm.c:157:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  157 |  strcat(buff, str_x);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -220,8 +52,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
-../Core/Src/app/app_sm.c:158:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  158 |  strcat(buff, value);
+../Core/Src/app/app_sm.c:157:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  157 |  strcat(buff, str_x);
       |               ^~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -231,7 +63,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
 ../Core/Src/app/app_sm.c:159:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  159 |  strcat(buff, str_y);
+  159 |  strcat(buff, value);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -241,7 +73,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
 ../Core/Src/app/app_sm.c:159:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  159 |  strcat(buff, str_y);
+  159 |  strcat(buff, value);
       |               ^~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -250,8 +82,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
-../Core/Src/app/app_sm.c:161:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  161 |  strcat(buff, value);
+../Core/Src/app/app_sm.c:160:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  160 |  strcat(buff, str_y);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -260,8 +92,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
-../Core/Src/app/app_sm.c:161:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  161 |  strcat(buff, value);
+../Core/Src/app/app_sm.c:160:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  160 |  strcat(buff, str_y);
       |               ^~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -271,7 +103,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
 ../Core/Src/app/app_sm.c:162:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  162 |  strcat(buff, str_z);
+  162 |  strcat(buff, value);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -281,7 +113,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
 ../Core/Src/app/app_sm.c:162:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  162 |  strcat(buff, str_z);
+  162 |  strcat(buff, value);
       |               ^~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -290,8 +122,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
-../Core/Src/app/app_sm.c:164:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  164 |  strcat(buff, value);
+../Core/Src/app/app_sm.c:163:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  163 |  strcat(buff, str_z);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -300,8 +132,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
-../Core/Src/app/app_sm.c:164:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  164 |  strcat(buff, value);
+../Core/Src/app/app_sm.c:163:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  163 |  strcat(buff, str_z);
       |               ^~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -310,8 +142,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
-../Core/Src/app/app_sm.c:166:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  166 |  strcat(buff, str_temp);
+../Core/Src/app/app_sm.c:165:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  165 |  strcat(buff, value);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -320,8 +152,28 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
-../Core/Src/app/app_sm.c:166:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  166 |  strcat(buff, str_temp);
+../Core/Src/app/app_sm.c:165:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  165 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:167:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  167 |  strcat(buff, str_accl);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:167:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  167 |  strcat(buff, str_accl);
       |               ^~~~~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -331,7 +183,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
 ../Core/Src/app/app_sm.c:168:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  168 |  strcat(buff, value);
+  168 |  strcat(buff, str_x);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -341,7 +193,7 @@ c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.external
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
 ../Core/Src/app/app_sm.c:168:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
-  168 |  strcat(buff, value);
+  168 |  strcat(buff, str_x);
       |               ^~~~~
       |               |
       |               uint8_t * {aka unsigned char *}
@@ -350,8 +202,8 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                                  ^
-../Core/Src/app/app_sm.c:169:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
-  169 |  strcat(buff, "*C\n\n");
+../Core/Src/app/app_sm.c:170:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  170 |  strcat(buff, value);
       |         ^~~~
       |         |
       |         uint8_t * {aka unsigned char *}
@@ -360,13 +212,655 @@ In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/P
 c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    34 | char  *strcat (char *__restrict, const char *__restrict);
       |                ^
+../Core/Src/app/app_sm.c:170:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  170 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:171:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  171 |  strcat(buff, str_y);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:171:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  171 |  strcat(buff, str_y);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:173:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  173 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:173:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  173 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:174:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  174 |  strcat(buff, str_z);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:174:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  174 |  strcat(buff, str_z);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:176:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  176 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:176:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  176 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:178:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  178 |  strcat(buff, str_temp);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:178:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  178 |  strcat(buff, str_temp);
+      |               ^~~~~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:179:2: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
+  179 |  itoa(data->temp, value, 10);
+      |  ^~~~
+      |  ftoa
+../Core/Src/app/app_sm.c:180:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  180 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:180:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  180 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:181:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  181 |  strcat(buff, "\n\n");
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c: In function 'ftoa':
+../Core/Src/app/app_sm.c:217:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  217 |  strcat(vstr,istr);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:217:14: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  217 |  strcat(vstr,istr);
+      |              ^~~~
+      |              |
+      |              uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:218:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  218 |  strcat(vstr, dot);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:218:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  218 |  strcat(vstr, dot);
+      |               ^~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:219:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  219 |  strcat(vstr, fstr);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:219:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  219 |  strcat(vstr, fstr);
+      |               ^~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MPU9250.elf
  
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  20196	     32	   1752	  21980	   55dc	MPU9250.elf
+  22316	     32	   1768	  24116	   5e34	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+13:35:44 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22316	     32	   1768	  24116	   5e34	MPU9250.elf
+Finished building: default.size.stdout
+ 
+13:36:35 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+../Core/Src/app/app_sm.c: In function 'print_string':
+../Core/Src/app/app_sm.c:155:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  155 |  strcat(buff, str);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:155:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  155 |  strcat(buff, str);
+      |               ^~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:156:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  156 |  strcat(buff, str_gyro);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:156:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  156 |  strcat(buff, str_gyro);
+      |               ^~~~~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:157:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  157 |  strcat(buff, str_x);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:157:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  157 |  strcat(buff, str_x);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:159:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  159 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:159:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  159 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:160:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  160 |  strcat(buff, str_y);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:160:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  160 |  strcat(buff, str_y);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:162:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  162 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:162:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  162 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:163:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  163 |  strcat(buff, str_z);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:163:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  163 |  strcat(buff, str_z);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:165:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  165 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:165:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  165 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:167:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  167 |  strcat(buff, str_accl);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:167:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  167 |  strcat(buff, str_accl);
+      |               ^~~~~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:168:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  168 |  strcat(buff, str_x);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:168:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  168 |  strcat(buff, str_x);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:170:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  170 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:170:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  170 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:171:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  171 |  strcat(buff, str_y);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:171:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  171 |  strcat(buff, str_y);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:173:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  173 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:173:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  173 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:174:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  174 |  strcat(buff, str_z);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:174:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  174 |  strcat(buff, str_z);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:176:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  176 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:176:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  176 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:178:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  178 |  strcat(buff, str_temp);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:178:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  178 |  strcat(buff, str_temp);
+      |               ^~~~~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:179:2: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
+  179 |  itoa(data->temp, value, 10);
+      |  ^~~~
+      |  ftoa
+../Core/Src/app/app_sm.c:180:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  180 |  strcat(buff, value);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:180:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  180 |  strcat(buff, value);
+      |               ^~~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:181:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  181 |  strcat(buff, "\n\n");
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c: In function 'ftoa':
+../Core/Src/app/app_sm.c:217:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  217 |  strcat(vstr,istr);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:217:14: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  217 |  strcat(vstr,istr);
+      |              ^~~~
+      |              |
+      |              uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:218:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  218 |  strcat(vstr, dot);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:218:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  218 |  strcat(vstr, dot);
+      |               ^~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/app/app_sm.c:219:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  219 |  strcat(vstr, fstr);
+      |         ^~~~
+      |         |
+      |         uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/app/app_sm.c:219:15: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  219 |  strcat(vstr, fstr);
+      |               ^~~~
+      |               |
+      |               uint8_t * {aka unsigned char *}
+In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:18,
+                 from ../Core/Src/app/app_sm.c:10:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:34:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  22316	     32	   1768	  24116	   5e34	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list

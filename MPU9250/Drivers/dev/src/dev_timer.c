@@ -25,6 +25,7 @@ retType DEV_TimerInit(ttimer_t * timer, tick_t duration){
 	retType ret = API_OK;
 
 	if(timer == 0 || duration <= 0 || duration > MAX_DELAY) return API_ERROR;
+	//Initialize Timer variables
 	timer->startTime = 0;
 	timer->duration = duration;
 	timer->running = false;
@@ -71,6 +72,7 @@ retType DEV_TimerWrite(ttimer_t * timer, tick_t duration){
 	retType ret = API_OK;
 
 	if(duration <= 0 || duration > MAX_DELAY) return API_ERROR;
+	//Rewrite duration value
 	timer->duration = duration;
 	return ret;
 }

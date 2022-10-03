@@ -34,6 +34,7 @@ retType DEV_UARTSendChar(uint8_t * pstring){
 
 	retType ret = API_OK;
 
+	//Send a char via UART
 	ret |= HAL_UART_Transmit(&huart, pstring, 1, TIME_OUT);
 
 	return ret;
@@ -51,6 +52,7 @@ retType DEV_UARTSendStringSize(uint8_t * pstring, uint16_t size){
 	retType ret = API_OK;
 
 	if(size == 0) return API_ERROR;
+	//Send a word via UART
 	ret |= HAL_UART_Transmit(&huart, pstring, size, TIME_OUT);
 
 	return ret;
@@ -68,6 +70,7 @@ retType DEV_UARTReceiveStringSize(uint8_t * pstring, uint16_t size){
 	retType ret = API_OK;
 
 	if(size == 0) return API_ERROR;
+	//Receive a word via UART
 	ret |= HAL_UART_Receive(&huart, pstring, size, TIME_OUT);
 
 	return ret;
@@ -84,6 +87,7 @@ retType DEV_UARTInit(void){
 	retType ret = API_OK;
 	uint8_t str[] = "UART INITIALIZED:\n";
 
+	//Define UART variable configuration
 	huart.Instance = USARTx;
 	huart.Init.BaudRate= UART_BAUDRATE;
 	huart.Init.HwFlowCtl = UART_HWFLOWCTL;
@@ -93,8 +97,10 @@ retType DEV_UARTInit(void){
 	huart.Init.StopBits = UART_STOPBITS;
 	huart.Init.WordLength = UART_WORDLENGTH;
 
+	//Set configuration and initialize
 	ret |= HAL_UART_Init(&huart);
 	if(ret != API_OK) return ret;
+	//Print a little msg with UART state
 	else DEV_UARTSendStringSize(str, sizeof(str));
 	return ret;
 }
