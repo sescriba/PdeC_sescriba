@@ -27,6 +27,7 @@ typedef enum
 }retType;
 
 typedef bool bool_t;
+typedef char char_t;
 typedef uint32_t tick_t;
 
 

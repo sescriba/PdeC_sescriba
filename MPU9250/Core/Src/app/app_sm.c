@@ -21,7 +21,7 @@ ttimer_t idle;
 
 /* Private function prototypes -----------------------------------------------*/
 static retType print_string(MPU9250_t * data);
-static void ftoa(float value, uint8_t * str);
+static void ftoa(float value, char_t * str);
 
 /* Exposed Function  ---------------------------------------------------------*/
 /**
@@ -140,48 +140,48 @@ static retType print_string(MPU9250_t * data){
 
 	retType ret = API_OK;
 	uint8_t buff[256] = {0};
-	uint8_t value[8] = {0};
-	uint8_t str[] = "Data returned: ";
-	uint8_t str_gyro[] = "\nGyroscope [°/s]: ";
-	uint8_t str_accl[] = "\nAccelerometer [g]: ";
-	uint8_t str_temp[] = "\nTemperature [°C]: ";
-	uint8_t str_x[] = "\nAxis X: ";
-	uint8_t str_y[] = "\nAxis Y: ";
-	uint8_t str_z[] = "\nAxis Z: ";
-	uint8_t i = 0;
+	char_t value[8] = {0};
+	char_t str[] = "Data returned: ";
+	char_t str_gyro[] = "\nGyroscope [°/s]: ";
+	char_t str_accl[] = "\nAccelerometer [g]: ";
+	char_t str_temp[] = "\nTemperature [°C]: ";
+	char_t str_x[] = "\nAxis X: ";
+	char_t str_y[] = "\nAxis Y: ";
+	char_t str_z[] = "\nAxis Z: ";
+	char_t i = 0;
 
-	strcat(buff, str);
-	strcat(buff, str_gyro);
-	strcat(buff, str_x);
+	strcat((char_t *)buff, str);
+	strcat((char_t *)buff, str_gyro);
+	strcat((char_t *)buff, str_x);
 	ftoa(data->gyro.x, value);
-	strcat(buff, value);
-	strcat(buff, str_y);
+	strcat((char_t *)buff, value);
+	strcat((char_t *)buff, str_y);
 	ftoa(data->gyro.y, value);
-	strcat(buff, value);
-	strcat(buff, str_z);
+	strcat((char_t *)buff, value);
+	strcat((char_t *)buff, str_z);
 	ftoa(data->gyro.z, value);
-	strcat(buff, value);
+	strcat((char_t *)buff, value);
 
-	strcat(buff, str_accl);
-	strcat(buff, str_x);
+	strcat((char_t *)buff, str_accl);
+	strcat((char_t *)buff, str_x);
 	ftoa(data->accl.x, value);
-	strcat(buff, value);
-	strcat(buff, str_y);
+	strcat((char_t *)buff, value);
+	strcat((char_t *)buff, str_y);
 	ftoa(data->accl.y, value);
-	strcat(buff, value);
-	strcat(buff, str_z);
+	strcat((char_t *)buff, value);
+	strcat((char_t *)buff, str_z);
 	ftoa(data->accl.z, value);
-	strcat(buff, value);
+	strcat((char_t *)buff, value);
 
-	strcat(buff, str_temp);
-	itoa(data->temp, value, 10);
-	strcat(buff, value);
-	strcat(buff, "\n\n");
+	strcat((char_t *)buff, str_temp);
+	ftoa(data->temp, value);
+	strcat((char_t *)buff, value);
+	strcat((char_t *)buff, "\n\n");
 
 	for(i = 0; i<256; i++){
-		if(buff[i] == '\0') return ret;
+		if(*(buff + i) == '\0') break;
 		//Print byte by byte
-		DEV_UARTSendChar(&buff[i]);
+		DEV_UARTSendChar(buff + i);
 	}
 	return ret;
 }
@@ -193,14 +193,14 @@ static retType print_string(MPU9250_t * data){
  * 		str		[O] - String output
  * @retval void
  */
-static void ftoa(float value, uint8_t * str){
+static void ftoa(float value, char_t * str){
 
 	float fpart;
-    uint8_t ipart;
-    uint8_t istr[5] = {0};
-    uint8_t dot[] = ".";
-    uint8_t fstr[2] = {0};
-    uint8_t vstr[8] = {0};
+	uint8_t ipart;
+    char_t istr[5] = {0};
+    char_t dot[] = ".";
+    char_t fstr[2] = {0};
+    char_t vstr[8] = {0};
 
     //Get int part
     ipart = (uint8_t)value;

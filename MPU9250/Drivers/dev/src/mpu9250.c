@@ -40,7 +40,7 @@
 /* Private function prototypes -----------------------------------------------*/
 static retType gyro_convert(uint16_t axis, float * paxis);
 static retType accl_convert(uint16_t axis, float * paxis);
-static retType temp_convert(uint16_t temp, uint16_t * ptemp);
+static retType temp_convert(uint16_t temp, float * ptemp);
 
 /* Exposed Function  ---------------------------------------------------------*/
 /**
@@ -176,7 +176,7 @@ retType APP_MPU9250ReadAccl(axis_t * accl){
  * 		temp [O] - Temperature value
  * @retval ret - Return API value
  */
-retType APP_MPU9250ReadTemp(uint16_t * temp){
+retType APP_MPU9250ReadTemp(float * temp){
 
 	retType ret = API_OK;
 	uint16_t aux_temp = 0;
@@ -192,7 +192,7 @@ retType APP_MPU9250ReadTemp(uint16_t * temp){
 /**
  * @brief  MPU9250 Gyroscope convert value (Intern function)
  * @param
- * 		axis [I] - Axis value to convert
+ * 		axis  [I] - Axis value to convert
  * 		paxis [O] - Value converted
  * @retval ret - Return API value
  */
@@ -212,7 +212,7 @@ static retType gyro_convert(uint16_t axis, float * paxis){
 /**
  * @brief  MPU9250 Accelerometer convert value (Intern function)
  * @param
- * 		axis [I] - Axis value to convert
+ * 		axis  [I] - Axis value to convert
  * 		paxis [O] - Value converted
  * @retval ret - Return API value
  */
@@ -232,11 +232,11 @@ static retType accl_convert(uint16_t axis, float * paxis){
 /**
  * @brief  MPU9250 Temperature convert value (Intern function)
  * @param
- * 		axis [I] - Axis value to convert
- * 		paxis [O] - Value converted
+ * 		temp  [I] - Temperature value to convert
+ * 		ptemp [O] - Value converted
  * @retval ret - Return API value
  */
-static retType temp_convert(uint16_t temp, uint16_t * ptemp){
+static retType temp_convert(uint16_t temp, float * ptemp){
 
 	retType ret = API_OK;
 	uint8_t aux = 0;
@@ -246,7 +246,7 @@ static retType temp_convert(uint16_t temp, uint16_t * ptemp){
 	temp = (temp&0x00ff)<<8;
 	temp |= aux;
 
-	//Apply scale and convertion to °C
-	*ptemp = (temp - 0)/321 + 21;
+	//Apply scale and conversion to °C
+	*ptemp = (temp - 0.0)/321.0 + 21.0;
 	return ret;
 }
