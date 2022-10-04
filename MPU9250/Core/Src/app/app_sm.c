@@ -17,8 +17,6 @@
 State_t states;
 State_t new_state;
 MPU9250_t read_buff;
-bool_t it_i2c;
-bool_t first_time;
 ttimer_t idle;
 
 /* Private function prototypes -----------------------------------------------*/
