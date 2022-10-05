@@ -198,7 +198,7 @@ void SysTick_Handler(void)
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32f4xx.s).                    */
 /******************************************************************************/
-
+extern I2CState_t I2C_state;
 /**
   * @brief This function handles I2C2 event interrupt.
   */
@@ -209,6 +209,13 @@ void I2C2_EV_IRQHandler(void)
   /* USER CODE END I2C2_EV_IRQn 0 */
   HAL_I2C_EV_IRQHandler(&hi2c);
   /* USER CODE BEGIN I2C2_EV_IRQn 1 */
+  if(hi2c.State == HAL_I2C_STATE_READY){
+	  I2C_state.api_state = I2C_OK;
+  }
+  else{
+	  I2C_state.api_state = I2C_BUSY;
+  }
+
   /* USER CODE END I2C2_EV_IRQn 1 */
 }
 
