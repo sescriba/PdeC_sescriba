@@ -11,7 +11,7 @@
 #include <math.h>
 
 /* Private define ------------------------------------------------------------*/
-#define READ_TIME 1000
+#define READ_TIME 1
 
 /* Private variables ---------------------------------------------------------*/
 State_t states;
@@ -78,7 +78,12 @@ retType APP_SMProccess(void){
 		//Gyroscope State: Read Gyroscope values
 		case SM_READGYRO:
 			ret |= APP_MPU9250ReadGyro(&read_buff.gyro);
-			if(ret != API_OK){
+			if(ret == API_BUSY){
+				new_state = SM_READGYRO;
+				states = SM_IDLE;
+				break;
+			}
+			if(ret == API_ERROR){
 				states = SM_ERROR;
 				break;
 			}

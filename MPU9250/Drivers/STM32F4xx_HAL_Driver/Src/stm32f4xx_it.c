@@ -198,6 +198,7 @@ void SysTick_Handler(void)
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32f4xx.s).                    */
 /******************************************************************************/
+/* Exposed variables ---------------------------------------------------------*/
 extern I2CState_t I2C_state;
 /**
   * @brief This function handles I2C2 event interrupt.

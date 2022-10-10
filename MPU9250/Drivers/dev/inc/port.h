@@ -16,19 +16,25 @@
 #include "stm32f4xx_hal_i2c.h"
 
 /**
-  * @brief  MPU9250_t MPU9250 values structure definition
+  * @brief  I2CStates_t I2C states enum
   */
 typedef enum{
 	I2C_OK,
 	I2C_BUSY,
 }I2CStates_t;
 
+/**
+  * @brief  I2CAddrStep_t I2C address states enum
+  */
 typedef enum{
 	I2C_S0,
 	I2C_S1,
 	I2C_S2,
 }I2CAddrStep_t;
 
+/**
+  * @brief  I2CState_t I2C states structure
+  */
 typedef struct{
 	I2CAddrStep_t addr_step;
 	I2CStates_t api_state;

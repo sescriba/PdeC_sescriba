@@ -32,26 +32,40 @@
 #define MPU9250_GYRO_YOUT_L 0x46
 #define MPU9250_GYRO_ZOUT_H 0x47
 #define MPU9250_GYRO_ZOUT_L 0x48
+#define MPU9250_INIT_REGISTERS 6
+#define MPU9250_GYRO_ACCL_REGISTERS 3
 
 //Module scales
 #define ACCL_SCALE (16.0*9.81/32768.0)
 #define GYRO_SCALE (2000.0/32768.0)
+
+/* Exposed variables ---------------------------------------------------------*/
+extern I2CState_t I2C_state;
 
 /* Private function prototypes -----------------------------------------------*/
 static retType gyro_convert(uint16_t axis, float * paxis);
 static retType accl_convert(uint16_t axis, float * paxis);
 static retType temp_convert(uint16_t temp, float * ptemp);
 
-extern I2CState_t I2C_state;
-
-//uint8_t init_parameters[]= {
-//		{MPU9250_PWR_MGMT_1, 0x0, 1},
-//		{MPU9250_PWR_MGMT_1, 0x1, 1},
-//		{MPU9250_GYRO_CONFIG, 0x18, 1},
-//		{MPU9250_CONFIG_AD, 0x7, 1},
-//		{MPU9250_ACCEL_CONFIG_1, 0x18, 1},
-//		{MPU9250_ACCEL_CONFIG_2, 0x7, 1},
-//};
+MPU9250Register_t MPU9250_InitValues[MPU9250_INIT_REGISTERS]= {
+		{.addr = MPU9250_PWR_MGMT_1, .value = 0x0, .size = 1},
+		{.addr = MPU9250_PWR_MGMT_1, .value = 0x1, .size = 1},
+		{.addr = MPU9250_GYRO_CONFIG, .value = 0x18, .size = 1},
+		{.addr = MPU9250_CONFIG_AD, .value = 0x7, .size = 1},
+		{.addr = MPU9250_ACCEL_CONFIG_1, .value = 0x18, .size = 1},
+		{.addr = MPU9250_ACCEL_CONFIG_2, .value = 0x7, .size = 1},
+};
+MPU9250Register_t MPU9250_GyroValues[MPU9250_GYRO_ACCL_REGISTERS]= {
+		{.addr = MPU9250_GYRO_XOUT_H, .value = 0x0, .size = 2},
+		{.addr = MPU9250_GYRO_YOUT_H, .value = 0x0, .size = 2},
+		{.addr = MPU9250_GYRO_ZOUT_H, .value = 0x0, .size = 2},
+};
+MPU9250Register_t MPU9250_AcclValues[MPU9250_GYRO_ACCL_REGISTERS]= {
+		{.addr = MPU9250_ACCEL_XOUT_H, .value = 0x0, .size = 2},
+		{.addr = MPU9250_ACCEL_YOUT_H, .value = 0x0, .size = 2},
+		{.addr = MPU9250_ACCEL_ZOUT_H, .value = 0x0, .size = 2},
+};
+uint8_t iter = 0;
 /* Exposed Function  ---------------------------------------------------------*/
 /**
  * @brief  MPU9250 Write word
@@ -68,7 +82,16 @@ retType APP_MPU9250Write(uint8_t addr2write, uint8_t * pdata, uint16_t size){
 	if(size <= 0) ret = API_ERROR;
 	if(ret != API_OK) return ret;
 
-	//Write a word on MPU9250 device
+	/*
+	 *  Write a word on MPU9250 device
+	 *  This function returns the API state according to if a complete I2C transaction finished or not.
+	 *  That means a register has been written and the peripheral is available to be used again.
+	 *
+	 *  There are three steps:
+	 *  	- Send register address. Check I2C interruption to know if the transaction is ready.
+	 *  	- Once IT happened, send data.
+	 *  	- Check I2C interruption to know if the transaction is ready.
+	 */
 	if(I2C_state.api_state != I2C_BUSY && I2C_state.addr_step == I2C_S0){
 		ret = DEV_I2CWrite(MPU9250_SLAVEADDR, &addr2write, 1);
 		I2C_state.api_state = I2C_BUSY;
@@ -102,7 +125,16 @@ retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
 	if(size == 0) ret = API_ERROR;
 	if(ret != API_OK) return ret;
 
-	//Read a word from MPU9250 device
+	/*
+	 *  Read a word on MPU9250 device
+	 *  This function returns the API state according to if a complete I2C transaction finished or not.
+	 *  That means a register has been written and the peripheral is available to be used again.
+	 *
+	 *  There are three steps:
+	 *  	- Send register address. Check I2C interruption to know if the transaction is ready.
+	 *  	- Once IT happened, receive data.
+	 *  	- Check I2C interruption to know if the transaction is ready.
+	 */
 	if(I2C_state.api_state != I2C_BUSY && I2C_state.addr_step == I2C_S0){
 		ret = DEV_I2CWrite(MPU9250_SLAVEADDR, &addr2read, 1);
 		I2C_state.api_state = I2C_BUSY;
@@ -131,36 +163,19 @@ retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
 retType APP_MPU9250Init(void){
 
 	retType ret = API_OK;
+	uint8_t i = iter;
 
 	//Check if MPU communication via I2C is ready
 	ret |= DEV_I2CIsReady(MPU9250_SLAVEADDR);
 	if(ret != API_OK) return ret;
 	//Set MPU configuration
 	//General configuration: CLKSEL
-	do{
-		ret = APP_MPU9250Write(MPU9250_PWR_MGMT_1, (uint8_t*)0x0, 1);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
 
-	do{
-		ret = APP_MPU9250Write(MPU9250_PWR_MGMT_1, (uint8_t*)0x1, 1);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	//Gyroscope configuration: Scale
-	do{
-		ret = APP_MPU9250Write(MPU9250_GYRO_CONFIG, (uint8_t*)0x18, 1);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	do{
-		ret = APP_MPU9250Write(MPU9250_CONFIG_AD, (uint8_t*)0x7, 1);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	//Accelerometer configuration: Scale
-
-	do{
-		ret = APP_MPU9250Write(MPU9250_ACCEL_CONFIG_1, (uint8_t*)0x18, 1);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-
-	do{
-		ret = APP_MPU9250Write(MPU9250_ACCEL_CONFIG_2, (uint8_t*)0x7, 1);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-
+	for(i=0; i < MPU9250_INIT_REGISTERS; i++){
+		do{
+		ret = APP_MPU9250Write(MPU9250_InitValues[i].addr, (uint8_t*)&MPU9250_InitValues[i].value, MPU9250_InitValues[i].size);
+		}while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));// return API_BUSY;
+	}
 	return ret;
 
 }
@@ -174,26 +189,25 @@ retType APP_MPU9250Init(void){
 retType APP_MPU9250ReadGyro(axis_t * gyro){
 
 	retType ret = API_OK;
-	uint16_t aux_x = 0;
-	uint16_t aux_y = 0;
-	uint16_t aux_z = 0;
+	uint8_t i = 0;
+	uint16_t aux = 0;
 
 	//Read Gyroscope values for Axes X, Y and Z
-	do{
-		ret = APP_MPU9250Read(MPU9250_GYRO_XOUT_H, (uint8_t*)&aux_x, 2);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	do{
-		ret = APP_MPU9250Read(MPU9250_GYRO_YOUT_H, (uint8_t*)&aux_y, 2);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	do{
-		ret = APP_MPU9250Read(MPU9250_GYRO_ZOUT_H, (uint8_t*)&aux_z, 2);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
+	for(i = iter; i < MPU9250_GYRO_ACCL_REGISTERS; i++){
+//		do{
+		ret = APP_MPU9250Read(MPU9250_GyroValues[i].addr, (uint8_t*)&aux, MPU9250_GyroValues[i].size);
+		if(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1)){
+			iter = i;
+			return API_BUSY;
+		}
+		MPU9250_GyroValues[i].value = aux;
+		iter = i;
+	}
 
 	//Convert to human scale Gyroscope values for Axes X, Y and Z
-
-	ret = gyro_convert(aux_x, &(gyro->x));
-	ret |= gyro_convert(aux_y, &(gyro->y));
-	ret |= gyro_convert(aux_z, &(gyro->z));
+	ret = gyro_convert(MPU9250_GyroValues[0].value, &(gyro->x));
+	ret |= gyro_convert(MPU9250_GyroValues[1].value, &(gyro->y));
+	ret |= gyro_convert(MPU9250_GyroValues[2].value, &(gyro->z));
 	return ret;
 }
 
@@ -206,25 +220,21 @@ retType APP_MPU9250ReadGyro(axis_t * gyro){
 retType APP_MPU9250ReadAccl(axis_t * accl){
 
 	retType ret = API_OK;
-	uint16_t aux_x = 0;
-	uint16_t aux_y = 0;
-	uint16_t aux_z = 0;
+	uint8_t i = iter;
+	uint16_t aux = 0;
 
 	//Read Accelerometer values for Axes X, Y and Z
-	do{
-		ret = APP_MPU9250Read(MPU9250_ACCEL_XOUT_H, (uint8_t*)&aux_x, 2);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	do{
-		ret = APP_MPU9250Read(MPU9250_ACCEL_YOUT_H, (uint8_t*)&aux_y, 2);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
-	do{
-		ret = APP_MPU9250Read(MPU9250_ACCEL_ZOUT_H, (uint8_t*)&aux_z, 2);
-	} while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
+	for(i=0; i < MPU9250_GYRO_ACCL_REGISTERS; i++){
+		do{
+		ret = APP_MPU9250Read(MPU9250_AcclValues[i].addr, (uint8_t*)&aux, MPU9250_AcclValues[i].size);
+		}while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));// return API_BUSY;
+		MPU9250_AcclValues[i].value = aux;
+	}
 
 	//Convert to human scale Accelerometer values for Axes X, Y and Z
-	ret = accl_convert(aux_x, &(accl->x));
-	ret |= accl_convert(aux_y, &(accl->y));
-	ret |= accl_convert(aux_z, &(accl->z));
+	ret = accl_convert(MPU9250_AcclValues[0].value, &(accl->x));
+	ret |= accl_convert(MPU9250_AcclValues[1].value, &(accl->y));
+	ret |= accl_convert(MPU9250_AcclValues[2].value, &(accl->z));
 	return ret;
 }
 

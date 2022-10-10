@@ -51,7 +51,7 @@ int main(void)
 	{
 		//Update FSM
 		ret |= APP_SMProccess();
-		if(ret != API_OK) Error_Handler();
+		if(ret == API_ERROR) Error_Handler();
 	}
 }
 

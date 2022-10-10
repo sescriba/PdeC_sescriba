@@ -1,113 +1,136 @@
-17:25:32 **** Incremental Build of configuration Debug for project MPU9250 ****
+21:40:08 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Read':
-../Drivers/dev/src/mpu9250.c:104:25: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  104 |  if(I2C_state.api_state == API_OK && I2C_state.i2c_state == true){
-      |                         ^~
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Init':
-../Drivers/dev/src/mpu9250.c:140:30: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  140 |  } while(I2C_state.api_state == API_BUSY);
-      |                              ^~
-../Drivers/dev/src/mpu9250.c:144:30: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  144 |  } while(I2C_state.api_state == API_BUSY);
-      |                              ^~
-../Drivers/dev/src/mpu9250.c:148:30: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  148 |  } while(I2C_state.api_state == API_BUSY);
-      |                              ^~
-../Drivers/dev/src/mpu9250.c:151:30: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  151 |  } while(I2C_state.api_state == API_BUSY);
-      |                              ^~
-../Drivers/dev/src/mpu9250.c:156:30: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  156 |  } while(I2C_state.api_state == API_BUSY);
-      |                              ^~
-../Drivers/dev/src/mpu9250.c:160:30: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  160 |  } while(I2C_state.api_state == API_BUSY);
-      |                              ^~
+../Drivers/dev/src/mpu9250.c:52:41: warning: initialization of 'uint16_t *' {aka 'short unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   52 |   {.addr = MPU9250_PWR_MGMT_1, .value = 0x1, .size = 1},
+      |                                         ^~~
+../Drivers/dev/src/mpu9250.c:52:41: note: (near initialization for 'MPU9250_InitValues[1].value')
+../Drivers/dev/src/mpu9250.c:53:42: warning: initialization of 'uint16_t *' {aka 'short unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   53 |   {.addr = MPU9250_GYRO_CONFIG, .value = 0x18, .size = 1},
+      |                                          ^~~~
+../Drivers/dev/src/mpu9250.c:53:42: note: (near initialization for 'MPU9250_InitValues[2].value')
+../Drivers/dev/src/mpu9250.c:54:40: warning: initialization of 'uint16_t *' {aka 'short unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   54 |   {.addr = MPU9250_CONFIG_AD, .value = 0x7, .size = 1},
+      |                                        ^~~
+../Drivers/dev/src/mpu9250.c:54:40: note: (near initialization for 'MPU9250_InitValues[3].value')
+../Drivers/dev/src/mpu9250.c:55:45: warning: initialization of 'uint16_t *' {aka 'short unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   55 |   {.addr = MPU9250_ACCEL_CONFIG_1, .value = 0x18, .size = 1},
+      |                                             ^~~~
+../Drivers/dev/src/mpu9250.c:55:45: note: (near initialization for 'MPU9250_InitValues[4].value')
+../Drivers/dev/src/mpu9250.c:56:45: warning: initialization of 'uint16_t *' {aka 'short unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   56 |   {.addr = MPU9250_ACCEL_CONFIG_2, .value = 0x7, .size = 1},
+      |                                             ^~~
+../Drivers/dev/src/mpu9250.c:56:45: note: (near initialization for 'MPU9250_InitValues[5].value')
 ../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadGyro':
-../Drivers/dev/src/mpu9250.c:182:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  182 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
-../Drivers/dev/src/mpu9250.c:185:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  185 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
-../Drivers/dev/src/mpu9250.c:188:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  188 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
+../Drivers/dev/src/mpu9250.c:215:42: warning: passing argument 1 of 'gyro_convert' makes integer from pointer without a cast [-Wint-conversion]
+  215 |  ret = gyro_convert(MPU9250_GyroValues[0].value, &(gyro->x));
+      |                     ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                          |
+      |                                          uint16_t * {aka short unsigned int *}
+../Drivers/dev/src/mpu9250.c:46:38: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+   46 | static retType gyro_convert(uint16_t axis, float * paxis);
+      |                             ~~~~~~~~~^~~~
+../Drivers/dev/src/mpu9250.c:216:43: warning: passing argument 1 of 'gyro_convert' makes integer from pointer without a cast [-Wint-conversion]
+  216 |  ret |= gyro_convert(MPU9250_GyroValues[1].value, &(gyro->y));
+      |                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                           |
+      |                                           uint16_t * {aka short unsigned int *}
+../Drivers/dev/src/mpu9250.c:46:38: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+   46 | static retType gyro_convert(uint16_t axis, float * paxis);
+      |                             ~~~~~~~~~^~~~
+../Drivers/dev/src/mpu9250.c:217:43: warning: passing argument 1 of 'gyro_convert' makes integer from pointer without a cast [-Wint-conversion]
+  217 |  ret |= gyro_convert(MPU9250_GyroValues[2].value, &(gyro->z));
+      |                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                           |
+      |                                           uint16_t * {aka short unsigned int *}
+../Drivers/dev/src/mpu9250.c:46:38: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+   46 | static retType gyro_convert(uint16_t axis, float * paxis);
+      |                             ~~~~~~~~~^~~~
 ../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadAccl':
-../Drivers/dev/src/mpu9250.c:213:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  213 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
-../Drivers/dev/src/mpu9250.c:216:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  216 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
-../Drivers/dev/src/mpu9250.c:219:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  219 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadTemp':
-../Drivers/dev/src/mpu9250.c:242:62: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  242 |  } while(I2C_state.i2c_state == false || I2C_state.api_state == API_BUSY);
-      |                                                              ^~
-../Core/Src/app/app_sm.c: In function 'ftoa':
-../Core/Src/app/app_sm.c:210:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
-  210 |     itoa(ipart, istr, 10);
-      |     ^~~~
-      |     ftoa
+../Drivers/dev/src/mpu9250.c:252:42: warning: passing argument 1 of 'accl_convert' makes integer from pointer without a cast [-Wint-conversion]
+  252 |  ret = accl_convert(MPU9250_AcclValues[0].value, &(accl->x));
+      |                     ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                          |
+      |                                          uint16_t * {aka short unsigned int *}
+../Drivers/dev/src/mpu9250.c:47:38: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+   47 | static retType accl_convert(uint16_t axis, float * paxis);
+      |                             ~~~~~~~~~^~~~
+../Drivers/dev/src/mpu9250.c:253:43: warning: passing argument 1 of 'accl_convert' makes integer from pointer without a cast [-Wint-conversion]
+  253 |  ret |= accl_convert(MPU9250_AcclValues[1].value, &(accl->y));
+      |                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                           |
+      |                                           uint16_t * {aka short unsigned int *}
+../Drivers/dev/src/mpu9250.c:47:38: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+   47 | static retType accl_convert(uint16_t axis, float * paxis);
+      |                             ~~~~~~~~~^~~~
+../Drivers/dev/src/mpu9250.c:254:43: warning: passing argument 1 of 'accl_convert' makes integer from pointer without a cast [-Wint-conversion]
+  254 |  ret |= accl_convert(MPU9250_AcclValues[2].value, &(accl->z));
+      |                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                           |
+      |                                           uint16_t * {aka short unsigned int *}
+../Drivers/dev/src/mpu9250.c:47:38: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+   47 | static retType accl_convert(uint16_t axis, float * paxis);
+      |                             ~~~~~~~~~^~~~
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MPU9250.elf
  
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23048	     32	   1768	  24848	   6110	MPU9250.elf
+  23152	    176	   1776	  25104	   6210	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-17:30:10 **** Incremental Build of configuration Debug for project MPU9250 ****
+21:40:15 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23152	    176	   1776	  25104	   6210	MPU9250.elf
+Finished building: default.size.stdout
+ 
+19:20:20 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o"
 arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Read':
-../Drivers/dev/src/mpu9250.c:104:25: warning: comparison between 'I2CStates_t' and 'enum <anonymous>' [-Wenum-compare]
-  104 |  if(I2C_state.api_state == API_OK && I2C_state.i2c_state == true){
-      |                         ^~
-../Drivers/dev/src/mpu9250.c:104:48: error: 'I2CState_t' has no member named 'i2c_state'; did you mean 'api_state'?
-  104 |  if(I2C_state.api_state == API_OK && I2C_state.i2c_state == true){
-      |                                                ^~~~~~~~~
-      |                                                api_state
-../Drivers/dev/src/mpu9250.c:107:13: error: 'I2CState_t' has no member named 'i2c_state'; did you mean 'api_state'?
-  107 |   I2C_state.i2c_state = false;
-      |             ^~~~~~~~~
-      |             api_state
-../Drivers/dev/src/mpu9250.c:110:15: error: 'I2CState_t' has no member named 'i2c_state'; did you mean 'api_state'?
-  110 |  if(I2C_state.i2c_state == true){
-      |               ^~~~~~~~~
-      |               api_state
-../Drivers/dev/src/mpu9250.c:113:13: error: 'I2CState_t' has no member named 'i2c_state'; did you mean 'api_state'?
-  113 |   I2C_state.i2c_state = false;
-      |             ^~~~~~~~~
-      |             api_state
-../Drivers/dev/src/mpu9250.c:116:13: error: 'I2CState_t' has no member named 'i2c_state'; did you mean 'api_state'?
-  116 |   I2C_state.i2c_state = false;
-      |             ^~~~~~~~~
-      |             api_state
-make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/mpu9250.o] Error 1
-make: *** Waiting for unfinished jobs....
 ../Core/Src/app/app_sm.c: In function 'ftoa':
 ../Core/Src/app/app_sm.c:210:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
   210 |     itoa(ipart, istr, 10);
       |     ^~~~
       |     ftoa
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:22:19 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadGyro':
+../Drivers/dev/src/mpu9250.c:200:83: error: '(MPU9250Register_t *)&MPU9250_GyroValues' is a pointer; did you mean to use '->'?
+  200 |   ret = APP_MPU9250Read(MPU9250_GyroValues[i].addr, (uint8_t*)&(MPU9250_GyroValues.value+i), MPU9250_GyroValues[i].size);
+      |                                                                                   ^
+      |                                                                                   ->
+make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/mpu9250.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:30:46 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:22:51 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadGyro':
+../Drivers/dev/src/mpu9250.c:200:83: error: '(MPU9250Register_t *)&MPU9250_GyroValues' is a pointer; did you mean to use '->'?
+  200 |   ret = APP_MPU9250Read(MPU9250_GyroValues[i].addr, (uint8_t*)&(MPU9250_GyroValues.value)+i*3, MPU9250_GyroValues[i].size);
+      |                                                                                   ^
+      |                                                                                   ->
+make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/mpu9250.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+19:23:09 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -116,41 +139,12 @@ Finished building target: MPU9250.elf
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23040	     32	   1768	  24840	   6108	MPU9250.elf
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-17:31:30 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-size   MPU9250.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23040	     32	   1768	  24840	   6108	MPU9250.elf
-Finished building: default.size.stdout
- 
-17:33:35 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
-arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MPU9250.elf
- 
-arm-none-eabi-size   MPU9250.elf 
-arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
-   text	   data	    bss	    dec	    hex	filename
-  23064	     32	   1768	  24864	   6120	MPU9250.elf
-Finished building: default.size.stdout
- 
-Finished building: MPU9250.list
- 
-17:33:53 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-size   MPU9250.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23064	     32	   1768	  24864	   6120	MPU9250.elf
-Finished building: default.size.stdout
- 
-17:35:42 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:27:47 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -159,19 +153,12 @@ Finished building target: MPU9250.elf
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23064	     32	   1768	  24864	   6120	MPU9250.elf
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-17:36:20 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-size   MPU9250.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23064	     32	   1768	  24864	   6120	MPU9250.elf
-Finished building: default.size.stdout
- 
-17:43:17 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:29:19 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -180,12 +167,19 @@ Finished building target: MPU9250.elf
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23136	     32	   1768	  24936	   6168	MPU9250.elf
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-17:51:52 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:29:49 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
+Finished building: default.size.stdout
+ 
+19:33:13 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -194,147 +188,185 @@ Finished building target: MPU9250.elf
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23168	     32	   1768	  24968	   6188	MPU9250.elf
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-17:58:02 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:33:19 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-size   MPU9250.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
+Finished building: default.size.stdout
+ 
+19:35:25 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:37:14 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadGyro':
+../Drivers/dev/src/mpu9250.c:200:78: warning: passing argument 2 of 'APP_MPU9250Read' from incompatible pointer type [-Wincompatible-pointer-types]
+  200 |   ret = APP_MPU9250Read(MPU9250_GyroValues[i].addr, (&MPU9250_GyroValues + 1 + i * 4), MPU9250_GyroValues[i].size);
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+      |                                                                              |
+      |                                                                              MPU9250Register_t (*)[3]
+../Drivers/dev/src/mpu9250.c:121:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'MPU9250Register_t (*)[3]'
+  121 | retType APP_MPU9250Read(uint8_t addr2read, uint8_t * pdata, uint16_t size){
+      |                                            ~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:37:46 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23136	    108	   1772	  25016	   61b8	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:42:28 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23064	    108	   1772	  24944	   6170	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:43:20 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23064	    108	   1772	  24944	   6170	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:43:40 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23064	    108	   1772	  24944	   6170	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:45:07 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23080	    108	   1772	  24960	   6180	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:54:28 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
 arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h:16,
-                 from ../Drivers/dev/src/mpu9250.c:10:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:28:2: error: unknown type name 'I2CAddr'
-   28 |  I2CAddr addr_state;
-      |  ^~~~~~~
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Write':
-../Drivers/dev/src/mpu9250.c:82:15: error: 'I2CState_t' has no member named 'addr_step'; did you mean 'addr_state'?
-   82 |  if(I2C_state.addr_step == 2) return API_OK;
-      |               ^~~~~~~~~
-      |               addr_state
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Read':
-../Drivers/dev/src/mpu9250.c:102:50: error: 'I2CState_t' has no member named 'addr_step'; did you mean 'addr_state'?
-  102 |  if(I2C_state.api_state != I2C_BUSY && I2C_state.addr_step == 0){
-      |                                                  ^~~~~~~~~
-      |                                                  addr_state
-../Drivers/dev/src/mpu9250.c:107:50: error: 'I2CState_t' has no member named 'addr_step'; did you mean 'addr_state'?
-  107 |  if(I2C_state.api_state != I2C_BUSY && I2C_state.addr_step == 1){
-      |                                                  ^~~~~~~~~
-      |                                                  addr_state
-../Drivers/dev/src/mpu9250.c:112:15: error: 'I2CState_t' has no member named 'addr_step'; did you mean 'addr_state'?
-  112 |  if(I2C_state.addr_step == 2) return API_OK;
-      |               ^~~~~~~~~
-      |               addr_state
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h:16,
-                 from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:15,
-                 from ../Core/Src/app/app_sm.c:10:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:28:2: error: unknown type name 'I2CAddr'
-   28 |  I2CAddr addr_state;
-      |  ^~~~~~~
-In file included from ../Drivers/dev/src/port.c:10:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:28:2: error: unknown type name 'I2CAddr'
-   28 |  I2CAddr addr_state;
-      |  ^~~~~~~
-In file included from ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.c:23:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:28:2: error: unknown type name 'I2CAddr'
-   28 |  I2CAddr addr_state;
-      |  ^~~~~~~
-make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/mpu9250.o] Error 1
-make: *** Waiting for unfinished jobs....
-make: *** [Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o] Error 1
 ../Core/Src/app/app_sm.c: In function 'ftoa':
-../Core/Src/app/app_sm.c:210:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
-  210 |     itoa(ipart, istr, 10);
+../Core/Src/app/app_sm.c:215:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
+  215 |     itoa(ipart, istr, 10);
       |     ^~~~
       |     ftoa
-make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/port.o] Error 1
-make: *** [Core/Src/app/subdir.mk:19: Core/Src/app/app_sm.o] Error 1
-In file included from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h:16,
-                 from D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:15,
-                 from ../Core/Src/main.c:11:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:28:2: error: unknown type name 'I2CAddr'
-   28 |  I2CAddr addr_state;
-      |  ^~~~~~~
-make: *** [Core/Src/subdir.mk:28: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:00:12 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Drivers/dev/src/port.c: In function 'DEV_I2CInit':
-../Drivers/dev/src/port.c:43:12: error: 'I2CState_t' has no member named 'addr_state'; did you mean 'addr_step'?
-   43 |  I2C_state.addr_state = false;
-      |            ^~~~~~~~~~
-      |            addr_step
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Write':
-../Drivers/dev/src/mpu9250.c:75:13: error: 'I2CState_t' has no member named 'addr_state'; did you mean 'addr_step'?
-   75 |   I2C_state.addr_state = true;
-      |             ^~~~~~~~~~
-      |             addr_step
-../Drivers/dev/src/mpu9250.c:80:13: error: 'I2CState_t' has no member named 'addr_state'; did you mean 'addr_step'?
-   80 |   I2C_state.addr_state = false;
-      |             ^~~~~~~~~~
-      |             addr_step
-../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250Read':
-../Drivers/dev/src/mpu9250.c:105:13: error: 'I2CState_t' has no member named 'addr_state'; did you mean 'addr_step'?
-  105 |   I2C_state.addr_state = true;
-      |             ^~~~~~~~~~
-      |             addr_step
-../Drivers/dev/src/mpu9250.c:110:13: error: 'I2CState_t' has no member named 'addr_state'; did you mean 'addr_step'?
-  110 |   I2C_state.addr_state = false;
-      |             ^~~~~~~~~~
-      |             addr_step
-make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/port.o] Error 1
-make: *** Waiting for unfinished jobs....
-make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/mpu9250.o] Error 1
-../Core/Src/app/app_sm.c: In function 'ftoa':
-../Core/Src/app/app_sm.c:210:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
-  210 |     itoa(ipart, istr, 10);
-      |     ^~~~
-      |     ftoa
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:01:51 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
-../Drivers/dev/src/port.c: In function 'DEV_I2CInit':
-../Drivers/dev/src/port.c:43:12: error: 'I2CState_t' has no member named 'addr_state'; did you mean 'addr_step'?
-   43 |  I2C_state.addr_state = false;
-      |            ^~~~~~~~~~
-      |            addr_step
-make: *** [Drivers/dev/src/subdir.mk:28: Drivers/dev/src/port.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:05:25 **** Incremental Build of configuration Debug for project MPU9250 ****
-make -j8 all 
-arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
-arm-none-eabi-gcc "../Drivers/dev/src/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/port.d" -MT"Drivers/dev/src/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/port.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MPU9250.elf
  
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23160	     32	   1768	  24960	   6180	MPU9250.elf
+  23104	    108	   1772	  24984	   6198	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
  
-18:07:39 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:55:27 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-size   MPU9250.elf 
    text	   data	    bss	    dec	    hex	filename
-  23160	     32	   1768	  24960	   6180	MPU9250.elf
+  23104	    108	   1772	  24984	   6198	MPU9250.elf
 Finished building: default.size.stdout
  
-18:09:36 **** Incremental Build of configuration Debug for project MPU9250 ****
+19:56:46 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23104	    108	   1772	  24984	   6198	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+19:59:59 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+../Drivers/dev/src/mpu9250.c: In function 'APP_MPU9250ReadGyro':
+../Drivers/dev/src/mpu9250.c:196:2: warning: statement with no effect [-Wunused-value]
+  196 |  for(i; i < MPU9250_GYRO_ACCL_REGISTERS; i++){
+      |  ^~~
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23104	    108	   1772	  24984	   6198	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+20:02:40 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
 arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -343,7 +375,64 @@ Finished building target: MPU9250.elf
 arm-none-eabi-size   MPU9250.elf 
 arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-  23168	     32	   1768	  24968	   6188	MPU9250.elf
+  23112	    108	   1772	  24992	   61a0	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+20:04:24 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+../Core/Src/app/app_sm.c: In function 'ftoa':
+../Core/Src/app/app_sm.c:215:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
+  215 |     itoa(ipart, istr, 10);
+      |     ^~~~
+      |     ftoa
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23112	    108	   1772	  24992	   61a0	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+20:06:00 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+../Core/Src/app/app_sm.c: In function 'ftoa':
+../Core/Src/app/app_sm.c:215:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
+  215 |     itoa(ipart, istr, 10);
+      |     ^~~~
+      |     ftoa
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23112	    108	   1772	  24992	   61a0	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
+ 
+20:06:39 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+../Core/Src/app/app_sm.c: In function 'ftoa':
+../Core/Src/app/app_sm.c:215:5: warning: implicit declaration of function 'itoa'; did you mean 'ftoa'? [-Wimplicit-function-declaration]
+  215 |     itoa(ipart, istr, 10);
+      |     ^~~~
+      |     ftoa
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Protocolos_Comunicacion\proyecto_final\PdeC_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23112	    108	   1772	  24992	   61a0	MPU9250.elf
 Finished building: default.size.stdout
  
 Finished building: MPU9250.list
