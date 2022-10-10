@@ -174,7 +174,7 @@ retType APP_MPU9250Init(void){
 	for(i=0; i < MPU9250_INIT_REGISTERS; i++){
 		do{
 		ret = APP_MPU9250Write(MPU9250_InitValues[i].addr, (uint8_t*)&MPU9250_InitValues[i].value, MPU9250_InitValues[i].size);
-		}while(ret == API_BUSY && (I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
+		}while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));// return API_BUSY;
 	}
 	return ret;
 
@@ -189,15 +189,19 @@ retType APP_MPU9250Init(void){
 retType APP_MPU9250ReadGyro(axis_t * gyro){
 
 	retType ret = API_OK;
-	uint8_t i = iter;
+	uint8_t i = 0;
 	uint16_t aux = 0;
 
 	//Read Gyroscope values for Axes X, Y and Z
-	for(i=0; i < MPU9250_GYRO_ACCL_REGISTERS; i++){
-		do{
+	for(i = iter; i < MPU9250_GYRO_ACCL_REGISTERS; i++){
+//		do{
 		ret = APP_MPU9250Read(MPU9250_GyroValues[i].addr, (uint8_t*)&aux, MPU9250_GyroValues[i].size);
-		}while(ret == API_BUSY && (I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
+		if(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1)){
+			iter = i;
+			return API_BUSY;
+		}
 		MPU9250_GyroValues[i].value = aux;
+		iter = i;
 	}
 
 	//Convert to human scale Gyroscope values for Axes X, Y and Z
@@ -223,7 +227,7 @@ retType APP_MPU9250ReadAccl(axis_t * accl){
 	for(i=0; i < MPU9250_GYRO_ACCL_REGISTERS; i++){
 		do{
 		ret = APP_MPU9250Read(MPU9250_AcclValues[i].addr, (uint8_t*)&aux, MPU9250_AcclValues[i].size);
-		}while(ret == API_BUSY && (I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));
+		}while(ret == API_BUSY &&(I2C_state.api_state == I2C_BUSY || I2C_state.addr_step == I2C_S1));// return API_BUSY;
 		MPU9250_AcclValues[i].value = aux;
 	}
 
