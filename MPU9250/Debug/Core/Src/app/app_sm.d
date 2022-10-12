@@ -1,8 +1,8 @@
 Core/Src/app/app_sm.o: ../Core/Src/app/app_sm.c \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h \
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Inc/app/app_sm.h \
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h \
  ../Core/Inc/types.h \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h \
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/port.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -32,14 +32,14 @@ Core/Src/app/app_sm.o: ../Core/Src/app/app_sm.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/dev_uart.h \
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/dev_uart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Core/Inc/app/app_sm.h:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h:
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/port.h \
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Inc/app/app_sm.h:
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/mpu9250.h:
 ../Core/Inc/types.h:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/port.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -69,7 +69,7 @@ D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/D
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/dev_uart.h:
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/dev_uart.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/port.h:
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h:
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/port.h:
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h:

@@ -8,16 +8,15 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "app_sm.h"
-#include <math.h>
 
 /* Private define ------------------------------------------------------------*/
-#define READ_TIME 1
+#define READ_TIME 1000
 
 /* Private variables ---------------------------------------------------------*/
-State_t states;
-State_t new_state;
-MPU9250_t read_buff;
-ttimer_t idle;
+static State_t states;
+static State_t new_state;
+static MPU9250_t read_buff;
+static ttimer_t idle;
 
 /* Private function prototypes -----------------------------------------------*/
 static retType print_string(MPU9250_t * data);
@@ -53,7 +52,11 @@ retType APP_SMProccess(void){
 	bool_t done = false;
 
 	switch(states){
-		//Initialization state: initialize UART and I2C communication and MPU9250
+		/*
+		 * Initialization state: initialize UART and I2C communication and MPU9250
+		 * After a case is ready, the SM will go to IDLE state just to wait or do other things
+		 * To exit from IDLE state, have to expire a timer. Then the next state will be set
+		 */
 		case SM_INIT:
 			ret |= DEV_UARTInit();
 			if(ret != API_OK){
@@ -67,7 +70,9 @@ retType APP_SMProccess(void){
 			}
 			ret |= APP_MPU9250Init();
 			if(ret == API_OK){
+				//Set next state to read/print information from MPU9250
 				new_state = SM_READGYRO;
+				//But first it will go to IDLE state, to wait or do other things
 				states = SM_IDLE;
 			}
 			else{
@@ -78,12 +83,7 @@ retType APP_SMProccess(void){
 		//Gyroscope State: Read Gyroscope values
 		case SM_READGYRO:
 			ret |= APP_MPU9250ReadGyro(&read_buff.gyro);
-			if(ret == API_BUSY){
-				new_state = SM_READGYRO;
-				states = SM_IDLE;
-				break;
-			}
-			if(ret == API_ERROR){
+			if(ret != API_OK){
 				states = SM_ERROR;
 				break;
 			}
@@ -207,13 +207,9 @@ static void ftoa(float value, char_t * str){
     char_t fstr[2] = {0};
     char_t vstr[8] = {0};
 
-    //Get int part
     ipart = (uint8_t)value;
-    //Get float part
     fpart = value - (float)ipart;
-    //Convert int part to string
     itoa(ipart, istr, 10);
-	//Convert float part to string
 	fpart = fpart * pow(10, 2);
 	itoa((uint8_t)fpart, fstr, 10);
 
@@ -221,7 +217,7 @@ static void ftoa(float value, char_t * str){
 	strcat(vstr, dot);
 	strcat(vstr, fstr);
 
-	for(int i = 0; i < 8; i++){
+	for(uint8_t i = 0; i < 8; i++){
 		str[i] = vstr[i];
 	}
 }

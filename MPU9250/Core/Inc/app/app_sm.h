@@ -18,6 +18,8 @@
 #include "string.h"
 #include "dev_timer.h"
 #include "types.h"
+#include <stdlib.h>
+#include <math.h>
 
 /* Exposed types -------------------------------------------------------------*/
 /**

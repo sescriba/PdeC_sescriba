@@ -1,5 +1,5 @@
 Drivers/dev/src/dev_timer.o: ../Drivers/dev/src/dev_timer.c \
- D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h \
+ D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -29,7 +29,7 @@ Drivers/dev/src/dev_timer.o: ../Drivers/dev/src/dev_timer.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../Core/Inc/types.h
-D:/Documents/CESE/Protocolos_Comunicacion/proyecto_final/PdeC_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h:
+D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc/dev_timer.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
