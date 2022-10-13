@@ -9,13 +9,13 @@ El proyecto contenido en este repositorio formula un Driver genérico para un IM
 ### Implementación
 El driver es del tipo no bloqueante mediante el uso de interrupciones. A su vez se encuentra modularizado en capas según el diagrama a continuación.
 
-dev/
-├── inc
-│   ├── mpu9250.h
-│   └── port.h
-└── src
-    ├── mpu9250.c
-    └── port.c
+    dev
+    ├── inc 
+    │   ├── mpu9250.h 
+    │   └── port.h 
+    └── src 
+        ├── mpu9250.c 
+        └── port.c 
 
 ### Ejemplo
 Finalmente, se adjunta un ejemplo de aplicación, donde se encuentra implementada una MEF capaz de exponer los valores devueltos mediante UART.
